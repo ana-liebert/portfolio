@@ -8,6 +8,9 @@ h1 {
     font-size: 300px;
     font-family: 'Staatliches', cursive;
 }
+h1:hover {
+    color: white;
+}
 
 .body {
     display: flex;
