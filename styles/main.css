@@ -1,29 +1,85 @@
-body {
-    color: rgb(201, 199, 199);
-    background-color: rgb(2, 3, 5);
-    font-size: 24px;
-}
-
-h1 {
-    font-size: 300px;
+.header {
+    font-size: 200px;
     font-family: 'Staatliches', cursive;
 }
-h1:hover {
-    color: white;
+
+body {
+    color: rgb(158, 185, 173);
+    background-color: rgb(14, 16, 19);
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
-.body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-p {
+.bio {
     font-family: 'Barlow Condensed', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    align-content: center;
+    text-align: start;
+    font-size: 25px;
 }
+
+.page-container {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+
+#f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
+    margin: -17px;
+    display: inline-block;
+  }
+
+  #f:hover {
+    color: #BCB6FF;
+  }
+  #u:hover {
+    color: #B8E1FF;
+  }
+  #l:hover {
+    color: #A9FFF7;
+  }
+  #l2:hover {
+    color: #94FBAB;
+  }
+  #s:hover {
+    color: #BCB6FF;
+  }
+  #t:hover {
+    color: #B8E1FF;
+  }
+  #a:hover {
+    color: #A9FFF7;
+  }
+  #c:hover {
+    color: #94FBAB;
+  }
+  #k:hover {
+    color: #BCB6FF;
+  }
+  #d:hover {
+    color: #B8E1FF;
+  }
+  #e:hover {
+    color: #A9FFF7;
+  }
+  #v:hover {
+    color: #94FBAB;
+  }
+  
+  #e2:hover {
+    color: #BCB6FF;
+  }
+  #l3:hover {
+    color: #B8E1FF;
+  }
+  #o:hover {
+    color: #A9FFF7;
+  }
+  #p:hover {
+    color: #94FBAB;
+  }
+  #e3:hover {
+    color: #BCB6FF;
+  }
+  #r:hover {
+    color: #B8E1FF;
+  }
