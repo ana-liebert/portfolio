@@ -106,12 +106,12 @@ body {
 
   i {
     margin: 15px !important;
-    font-size: 25px;
   }
 
   .icons {
     /* top left right bottom */
     margin: 50px 20px 20px 50px;
+    font-size: 25px;
   }
 
   .body-container {
@@ -134,4 +134,15 @@ justify-content: end !important;
 #project1, #project2, #project3 {
 padding-top: 90px;
 padding-bottom: 90px;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(158, 185, 173)
+}
+
+.code-link {
+  font-size: 40px;
+  text-align: center;
+  margin: 25px;
 }
