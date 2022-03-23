@@ -7,6 +7,7 @@ body {
     color: rgb(158, 185, 173);
     background-color: rgb(14, 16, 19);
     font-family: 'Barlow Condensed', sans-serif;
+    margin-bottom: 150px;
 }
 
 .bio {
@@ -18,8 +19,8 @@ body {
 }
 
 .page-container {
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 170px;
+    margin-bottom: 170px;
 }
 
 
@@ -83,3 +84,54 @@ body {
   #r:hover {
     color: #B8E1FF;
   }
+
+
+  .body-img {
+    height: 450px;
+    width: 580px;
+    display: flex;
+    justify-content: end;
+    border: solid white 5px;
+    /* margin-bottom: 30px; */
+  }
+
+  .body-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  i {
+    margin: 15px !important;
+    font-size: 25px;
+  }
+
+  .icons {
+    /* top left right bottom */
+    margin: 50px 20px 20px 50px;
+  }
+
+  .body-container {
+    margin-top: 80px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .body-header {
+    font-size: 50px;
+    font-family: 'Staatliches', cursive;
+}
+
+.nav-item {
+display: flex;
+justify-content: end !important;
+}
+
+
+
+#project1, #project2, #project3 {
+padding-top: 90px;
+padding-bottom: 90px;
+}
