@@ -1,7 +1,7 @@
-.header {
-    font-size: 200px;
+/* .header {
+    font-size: 12vw;
     font-family: 'Staatliches', cursive;
-}
+} */
 
 body {
     color: rgb(158, 185, 173);
@@ -9,23 +9,30 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     margin-bottom: 150px;
 }
+@keyframes body {
+  to {
+    background-color: rgb(19, 48, 97);
+  }
+}
 
 .bio {
     font-family: 'Barlow Condensed', sans-serif;
     display: flex;
     align-items: center;
     text-align: start;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .page-container {
-    margin-top: 170px;
-    margin-bottom: 170px;
+    margin-top: 230px;
+    margin-bottom: 230px;
 }
 
 
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
-    margin: -17px;
+    margin: -3px;
+    font-size: 11vw;
+    font-family: 'Staatliches', cursive;
     display: inline-block;
   }
 
@@ -100,7 +107,7 @@ body {
     flex-direction: column;
     font-size: 20px;
     line-height: 20px;
-    border: solid white;
+    /* border: solid white; */
     padding: 50px;
   }
   .body-info {
@@ -109,14 +116,14 @@ body {
   .icons {
     margin: 20px;
     font-size: 28px;
-    border: solid white;
+    /* border: solid white; */
     letter-spacing: 3px;
   }
 
   .footer-icons {
     margin: 30px;
     font-size: 32px;
-    border: solid white;
+    /* border: solid white; */
     letter-spacing: 6px;
   }
 
@@ -124,13 +131,13 @@ body {
   
     font-size: 50px;
     font-family: 'Staatliches', cursive;
-    border: solid white;
+    /* border: solid white; */
     text-align: start;
 }
   .body-container {
     margin-top: 80px !important;
     margin-bottom: 20px !important;
-    border: solid white;
+    /* border: solid white; */
   }
   .code-link {
     margin: 20px;
@@ -145,7 +152,7 @@ padding-right: 35px;
 
 
 
-#project1, #project2, #project3 {
+#project1, #project2, #project3, #project4 {
 padding-top: 90px;
 padding-bottom: 90px;
 /* border: solid white; */
