@@ -1,40 +1,53 @@
-/* .header {
-    font-size: 12vw;
-    font-family: 'Staatliches', cursive;
-} */
-
 body {
     color: rgb(158, 185, 173);
     background-color: rgb(14, 16, 19);
     font-family: 'Barlow Condensed', sans-serif;
     margin-bottom: 150px;
 }
-@keyframes body {
+/* @keyframes body {
   to {
     background-color: rgb(19, 48, 97);
   }
-}
+} */
 
 .bio {
     font-family: 'Barlow Condensed', sans-serif;
     display: flex;
     align-items: center;
     text-align: start;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .page-container {
-    margin-top: 230px;
-    margin-bottom: 230px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+@media only screen and (max-width: 800px) {
+  .page-container {
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
 }
 
 
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
-    font-size: 11vw;
+    /* font-size: 12.5vw; */
+    font-size: 125px;
     font-family: 'Staatliches', cursive;
     display: inline-block;
   }
+
+  @media only screen and (min-width: 1200px) {
+    #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
+      margin: -3px;
+    font-size: 180px;
+    font-family: 'Staatliches', cursive;
+    display: inline-block;
+    }
+  }
+
 
   #f:hover {
     color: #BCB6FF;
@@ -98,8 +111,19 @@ body {
     width: 580px;
     display: flex;
     justify-content: end;
+    align-content: center;
     border: solid white 5px;
   }
+
+  @media only screen and (max-width: 800px) {
+    .body-img {
+    height: 350px;
+    width: 475px;
+    display: flex;
+    justify-content: end;
+    }
+  }
+
   .body-text{
     display: flex;
     justify-content: start;
@@ -108,17 +132,27 @@ body {
     font-size: 20px;
     line-height: 20px;
     /* border: solid white; */
-    padding: 50px;
   }
   .body-info {
     margin: 20px;
   }
   .icons {
     margin: 20px;
-    font-size: 28px;
+    font-size: 26px;
     /* border: solid white; */
     letter-spacing: 3px;
+    line-height: 1.5;
   }
+  @media only screen and (min-width: 1400px) {
+    .icons {
+    margin: 20px;
+    font-size: 34px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    }
+  }
+
+
 
   .footer-icons {
     margin: 30px;
@@ -151,7 +185,6 @@ padding-right: 35px;
 }
 
 
-
 #project1, #project2, #project3, #project4 {
 padding-top: 90px;
 padding-bottom: 90px;
@@ -181,25 +214,23 @@ a:hover {
   margin-bottom: 150px;
 }
 
-.about-header {
-  text-align: end;
-  padding-top:20px;
-  padding-bottom:20px;
-  padding-right: 30px;
-  /* border: solid white; */
-  
-}
 
 .about-text {
   text-align: center;
-  /* padding: 0px 300px 0px 20px; */
   padding-right: 320px;
   padding-left: 320px;
   /* border: solid white; */
 }
 
+@media only screen and (max-width: 1000px) {
+  .about-text {
+    padding: 0px;
+    margin: 15px;
+  }
+}
+
+
 .contact-container {
-  /* margin: 200px 100px 200px 100px; */
   margin-top: 80px !important;
   margin-bottom: 20px !important;
   display: flex;
@@ -212,20 +243,15 @@ font-family: 'Staatliches', cursive;
   /* border: solid white; */
 }
 
+
+
 .contact-header {
   font-size: 160px;
 }
 
-
-/* #project1-header{
-  color: #BCB6FF;
+@media only screen and (max-width: 800px) {
+  .contact-header {
+  padding: 40px;
+  font-size: 130px;
+  }
 }
-#project2-header {
-  color: #B8E1FF;
-}
-#project3-header {
-  color: #A9FFF7;
-} */
-/* #l2:hover {
-  color: #94FBAB;
-} */
