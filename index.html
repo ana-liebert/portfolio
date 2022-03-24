@@ -29,28 +29,43 @@
 
 <body>
 
-    <nav class="nav navbar navbar-expand-lg">
+    <!-- <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <div class="nav container">
             <div>Work</div>
             <div>Contact</div>
         </div>
-    </nav>
+    </nav> -->
 
-    <!-- <nav class="navbar navbar-expand-sm">
-  
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Resume
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav> -->
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div>Work</div>
+            <div>Contact</div>
+        </div>
+      </nav> -->
+
+      <!-- <nav class="navbar fixed-top navbar-expand-lg ">
+        <div class="container-fluid d-flex justify-content-end">
+        <div >Work</div>
+        <div >Contact</div>
+        </div>
+      </nav> -->
+
+
+      <nav class="navbar fixed-top navbar-expand-lg">
+          <div class="container-fluid d-flex justify-content-start">
+            Brooklyn, NY
+          </div>
+          <div class="container-fluid d-flex justify-content-end">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#scroll-work">WORK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scroll-contact">GET IN TOUCH</a>
+                </li>
+              </ul>
+          </div>
+      </nav>
     </header>
 
 
@@ -104,33 +119,33 @@
 
 
 
-    <div class="container body-container" id="project1">
+    <div id="scroll-work" class="container body-container" id="project1">
         <div class="row body-row">
-            <div class="col body-text">
-                <div>
+            <div class="col">
+                <div class="body-text">
                     <div class="code-link">
-                    <h1 class="body-header">Mixtape</h1>
-                    <a href="https://github.com/ana-liebert/mixtape-frontend" target="_blank"><i class="devicon-github-original"></i></a>
-                    <a href="https://github.com/ana-liebert/mixtape-backend" target="_blank"><i class="devicon-github-original"></i></a>
-                    <a href="https://alieb-mixtape.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
+                    <h1 class="body-header" id="project1-header">Mixtape</h1>
+                    <a href="https://github.com/ana-liebert/mixtape-frontend" target="_blank">GITHUB FRONT, </a>
+                    <a href="https://github.com/ana-liebert/mixtape-backend" target="_blank">GITHUB BACK, </a>
+                    <a href="https://alieb-mixtape.netlify.app/" target="_blank">LIVE</a>
                     </div>
-                    <p>Main technologies: React, Django, Python, PostgreSQL</p>
-                    <p>Browse, listen to, and save your favorite curated 1hr mixes from Mixtape hosts</p>
-                    <p>Login as an admin to leverage full CRUD functionality. admin@admin.com , admin</p>
+                    <div class="body-info">
+                        <p>Main technologies: React, Django, Python, PostgreSQL</p>
+                        <p>Browse, listen to, and save your favorite curated 1hr mixes from Mixtape hosts</p>
+                        <p>Login as an admin to leverage full CRUD functionality. admin@admin.com , admin</p>
+                    </div>
 
+                    <div class="icons">
+                        <i class="devicon-react-original"></i>
+                        <i class="devicon-django-plain"></i>
+                        <i class="devicon-python-plain"></i>
+                        <i class="devicon-postgresql-plain"></i>
+                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-html5-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                        <i class="devicon-bootstrap-plain"></i>
+                    </div>
                 </div>
-                <div class="icons">
-                    <i class="devicon-react-original"></i>
-                    <i class="devicon-django-plain"></i>
-                    <i class="devicon-python-plain"></i>
-                    <i class="devicon-postgresql-plain"></i>
-                    <i class="devicon-javascript-plain"></i>
-                    <i class="devicon-html5-plain"></i>
-                    <i class="devicon-css3-plain"></i>
-                    <i class="devicon-bootstrap-plain"></i>
-                </div>
-
-
             </div>
             <div class="col">
                 <img class="body-img" src="images/Screen Shot 2022-03-22 at 6.27.56 PM.png">
@@ -141,23 +156,25 @@
 
     <div class="container body-container" id="project2">
         <div class="row body-row">
-            <div class="col body-text">
-                <div>
+            <div class="col">
+                <div class="body-text">
                     <div class="code-link">
-                        <h1 class="body-header">Travelr</h1>
-                        <a href="https://github.com/ana-liebert/travelr" target="_blank"><i class="devicon-github-original"></i></a>
+                        <h1 class="body-header" id="project2-header">Travelr</h1>
+                        <a href="https://github.com/ana-liebert/travelr" target="_blank">GITHUB</a>
                     </div>
-                    <p>Main technologies: Django, Python, PostgreSQL</p>
-                    <p>Browse, and contribute to Travelr guides for cities around the world</p>
+                    <div class="body-info">
+                        <p>Main technologies: Django, Python, PostgreSQL</p>
+                        <p>Browse, and contribute to Travelr guides for cities around the world</p>
+                    </div>
 
-                </div>
-                <div class="icons">
-                    <i class="devicon-django-plain"></i>
-                    <i class="devicon-python-plain"></i>
-                    <i class="devicon-postgresql-plain"></i>
-                    <i class="devicon-html5-plain"></i>
-                    <i class="devicon-css3-plain"></i>
-                    <i class="devicon-bootstrap-plain"></i>
+                    <div class="icons">
+                        <i class="devicon-django-plain"></i>
+                        <i class="devicon-python-plain"></i>
+                        <i class="devicon-postgresql-plain"></i>
+                        <i class="devicon-html5-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                        <i class="devicon-bootstrap-plain"></i>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -169,23 +186,25 @@
 
     <div class="container body-container" id="project3">
         <div class="row body-row">
-            <div class="col body-text">
-                <div>
+            <div class="col">
+                <div class="body-text">
                     <div class="code-link">
-                        <h1 class="body-header">The Open Source Kitchen</h1>
-                        <a href="https://github.com/ana-liebert/open-source-kitchen" target="_blank"><i class="devicon-github-original"></i></a>
-                        <a href="https://salty-tundra-68910.herokuapp.com/" target="_blank"><i class="fa-solid fa-display"></i></a>
+                        <h1 class="body-header" id="project3-header">The Open Source Kitchen</h1>
+                        <a href="https://github.com/ana-liebert/open-source-kitchen" target="_blank">GITHUB, </a>
+                        <a href="https://salty-tundra-68910.herokuapp.com/" target="_blank">LIVE</a>
                     </div>
-                    <p>Main technologies: Mongo, Express, Node.js </p>
-                    <p>Browse, post, and write reviews on this recipe blog</p>
+                    <div class="body-info">
+                        <p>Main technologies: Mongo, Express, Node.js </p>
+                        <p>Browse, post, and write reviews on this recipe blog</p>
+                    </div>
 
-                </div>
-                <div class="icons">
-                    <i class="devicon-mongodb-plain"></i>
-                    <i class="devicon-express-original"></i>
-                    <i class="devicon-nodejs-plain"></i>
-                    <i class="devicon-css3-plain"></i>
-                    <i class="devicon-bulma-plain"></i>
+                    <div class="icons">
+                        <i class="devicon-mongodb-plain"></i>
+                        <i class="devicon-express-original"></i>
+                        <i class="devicon-nodejs-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                        <i class="devicon-bulma-plain"></i>
+                    </div>
                 </div>
 
 
@@ -203,20 +222,21 @@
                 <h1 class="about-header">Get to know me</h1>
             </div> -->
             <div class="col about-text" >
-                <p>When I'm not coding projects about cooking, traveling, and music-- you can catch me cooking, traveling, and making <a href="https://open.spotify.com/playlist/0pIHgtIk5rIIDO4HfcqNdQ" target="_blank">playlists</a> or <a href="https://soundcloud.com/ANAMOV" target="_blank">mixes</a>. I also like to take photos, and I'm currently coding myself a website to showcase my photography.</p>
+                <p>When I'm not coding, you can catch me cooking, traveling, or making <a href="https://open.spotify.com/playlist/0pIHgtIk5rIIDO4HfcqNdQ" target="_blank">playlists</a> and <a href="https://soundcloud.com/ANAMOV" target="_blank">mixes</a>. I also like to take photos, and I'm currently coding myself a website to showcase my photography.</p>
             </div>
         </div>
     </div>
 
-    <div class="container contact-container">
+    <div id="scroll-contact" class="container contact-container">
         <div class="row">
             <div class="col">
                 <h1 class="contact-header">Let's Connect</h1>
                 <p>analiebert19@gmail.com</p>
-                <a href = "mailto: abc@example.com">Send Email</a>
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="devicon-github-original"></i>
+                <div class="footer-icons">
+                    <a href = "mailto: analiebert19@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/analiebert/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ana-liebert" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
 
             </div>
         </div>

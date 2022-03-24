@@ -92,41 +92,55 @@ body {
     display: flex;
     justify-content: end;
     border: solid white 5px;
-    /* margin-bottom: 30px; */
   }
-
   .body-text{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
     font-size: 20px;
     line-height: 20px;
+    border: solid white;
+    padding: 50px;
   }
-
-  i {
-    margin: 15px !important;
+  .body-info {
+    margin: 20px;
   }
-
   .icons {
-    /* top left right bottom */
-    margin: 50px 20px 20px 50px;
-    font-size: 25px;
+    margin: 20px;
+    font-size: 28px;
+    border: solid white;
+    letter-spacing: 3px;
   }
 
-  .body-container {
-    margin-top: 80px !important;
-    margin-bottom: 20px !important;
+  .footer-icons {
+    margin: 30px;
+    font-size: 32px;
+    border: solid white;
+    letter-spacing: 6px;
   }
 
   .body-header {
+  
     font-size: 50px;
     font-family: 'Staatliches', cursive;
+    border: solid white;
+    text-align: start;
 }
+  .body-container {
+    margin-top: 80px !important;
+    margin-bottom: 20px !important;
+    border: solid white;
+  }
+  .code-link {
+    margin: 20px;
+  }
 
-.nav-item {
-display: flex;
-justify-content: end !important;
+.navbar {
+font-size: 24px;
+background-color: rgb(14, 16, 19) !important;
+padding-left: 35px;
+padding-right: 35px;
 }
 
 
@@ -139,14 +153,14 @@ padding-bottom: 90px;
 
 a {
   text-decoration: none;
-  color:rgb(255, 255, 255)
+  color: white !important;
 }
 
-.code-link {
-  font-size: 40px;
-  text-align: center;
-  margin: 25px;
+a:hover {
+  color: #94FBAB !important;
+  text-decoration: underline;
 }
+
 
 
 .about-container {
@@ -194,3 +208,17 @@ font-family: 'Staatliches', cursive;
 .contact-header {
   font-size: 160px;
 }
+
+
+/* #project1-header{
+  color: #BCB6FF;
+}
+#project2-header {
+  color: #B8E1FF;
+}
+#project3-header {
+  color: #A9FFF7;
+} */
+/* #l2:hover {
+  color: #94FBAB;
+} */
