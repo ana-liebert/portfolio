@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     text-align: start;
-    font-size: 22px;
+    font-size: 20px;
     margin-right: 100px;
     animation: bio .8s linear;
 }
@@ -78,8 +78,8 @@ body {
   }
   @media only screen and (min-width: 1400px) {
     #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
-    margin: -3px;
-    font-size: 210px;
+    margin: -4px;
+    font-size: 212px;
     font-family: 'Staatliches', cursive;
     display: inline-block;
     }
@@ -326,8 +326,8 @@ font-family: 'Staatliches', cursive;
   font-family: 'Staatliches', cursive;
   position: relative;
   overflow: visible;
-  animation: right-to-left 15s linear infinite;
-  animation-delay: 0s;
+  animation: right-to-left 11s linear infinite;
+  animation-delay: -1s;
   white-space: nowrap;
   animation-play-state: running;
 
@@ -355,7 +355,7 @@ font-family: 'Staatliches', cursive;
   }
   
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-160%);
     color: #B8E1FF;
   }
 }
