@@ -30,7 +30,6 @@ body {
 
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
-    /* font-size: 12.5vw; */
     font-size: 100px;
     font-family: 'Staatliches', cursive;
     display: inline-block;
@@ -46,42 +45,28 @@ body {
 
   @media only screen and (min-width: 600px) {
     #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
-    margin: -3px;
     font-size: 130px;
-    font-family: 'Staatliches', cursive;
-    display: inline-block;
     }
   }
   @media only screen and (min-width: 800px) {
     #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
-    margin: -3px;
     font-size: 145px;
-    font-family: 'Staatliches', cursive;
-    display: inline-block;
     }
   }
   @media only screen and (min-width: 1100px) {
     #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
-    margin: -3px;
     font-size: 150px;
-    font-family: 'Staatliches', cursive;
-    display: inline-block;
     }
   }
   @media only screen and (min-width: 1200px) {
     #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
-    margin: -3px;
     font-size: 180px;
-    font-family: 'Staatliches', cursive;
-    display: inline-block;
     }
   }
   @media only screen and (min-width: 1400px) {
     #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
     margin: -4px;
     font-size: 212px;
-    font-family: 'Staatliches', cursive;
-    display: inline-block;
     }
   }
 
@@ -102,7 +87,6 @@ body {
       transform: translateX(0%); 
     }
   }
-
 
   #f:hover {
     color: #BCB6FF;
@@ -160,7 +144,6 @@ body {
     color: #B8E1FF;
   }
 
-
   .body-img {
     height: 450px;
     width: 580px;
@@ -169,6 +152,25 @@ body {
     align-content: center;
     border: solid white 5px;
   }
+
+  /* TODO --------> animations */
+  /* .hidden {
+    opacity: 0;
+  }  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  }
+  .body-img {
+    animation: fade-in 1.4s forwards;
+  } */
+
 
   @media only screen and (max-width: 800px) {
     .body-img {
@@ -186,7 +188,6 @@ body {
     flex-direction: column;
     font-size: 20px;
     line-height: 20px;
-    /* border: solid white; */
   }
   .body-info {
     margin: 20px;
@@ -194,7 +195,6 @@ body {
   .icons {
     margin: 20px;
     font-size: 26px;
-    /* border: solid white; */
     letter-spacing: 3px;
     line-height: 1.5;
   }
@@ -207,26 +207,15 @@ body {
     }
   }
 
-
-
-  .footer-icons {
-    margin: 30px;
-    font-size: 32px;
-    /* border: solid white; */
-    letter-spacing: 6px;
-  }
-
   .body-header {
   
     font-size: 50px;
     font-family: 'Staatliches', cursive;
-    /* border: solid white; */
     text-align: start;
 }
   .body-container {
     margin-top: 80px !important;
     margin-bottom: 20px !important;
-    /* border: solid white; */
   }
   .code-link {
     margin: 20px;
@@ -243,7 +232,6 @@ padding-right: 35px;
 #project1, #project2, #project3, #project4 {
 padding-top: 90px;
 padding-bottom: 90px;
-/* border: solid white; */
 }
 
 a {
@@ -264,7 +252,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: solid white; */
   margin-top: 150px;
   margin-bottom: 150px;
 }
@@ -274,7 +261,6 @@ a:hover {
   text-align: center;
   padding-right: 320px;
   padding-left: 320px;
-  /* border: solid white; */
 }
 
 @media only screen and (max-width: 1000px) {
@@ -289,21 +275,20 @@ a:hover {
   margin-top: 80px !important;
   margin-bottom: 20px !important;
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 25px;
   text-align: center;
-font-family: 'Staatliches', cursive;
-  /* border: solid white; */
+  font-family: 'Staatliches', cursive;
 }
 
 
 
 .contact-header {
   font-size: 160px;
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 
@@ -320,42 +305,46 @@ font-family: 'Staatliches', cursive;
 }
 
 
- 
 .child {
-  font-size: 160px;
+  font-size: 170px;
   font-family: 'Staatliches', cursive;
   position: relative;
   overflow: visible;
-  animation: right-to-left 11s linear infinite;
+  animation: right-to-left 13s linear infinite;
   animation-delay: -1s;
   white-space: nowrap;
   animation-play-state: running;
-
 }
-
-/* #parent:hover .child {
-  animation-play-state: paused;
-} */
 
 @keyframes right-to-left {
   0% {
     transform: translateX(100%); color: #B8E1FF;
   }
-
   25% {
     color: #BCB6FF;
   }
-
   50% {
     color: #A9FFF7;
   }
-  
   75% {
     color: #94FBAB;
   }
-  
   100% {
     transform: translateX(-160%);
     color: #B8E1FF;
   }
 }
+
+.footer {
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-icons {
+  margin: 20px;
+  font-size: 50px;
+  letter-spacing: 15px;
+}
+
+
