@@ -3,6 +3,7 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     margin-bottom: 150px;
     background-color: rgb(14, 16, 19);
+    overflow-x: hidden;
 }
 
 .bio {
@@ -184,7 +185,7 @@ body {
 
   @media only screen and (max-width: 480px) {
     .body-img {
-    height: 200px;
+    height: 250px;
     width: 325px;
     display: flex;
     justify-content: end;
