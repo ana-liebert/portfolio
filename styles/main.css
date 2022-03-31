@@ -30,7 +30,7 @@ body {
 
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
-    font-size: 100px;
+    font-size: 75px;
     font-family: 'Staatliches', cursive;
     display: inline-block;
   }
@@ -172,10 +172,10 @@ body {
   } */
 
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 650px) {
     .body-img {
-    height: 350px;
-    width: 475px;
+    height: 300px;
+    width: 425px;
     display: flex;
     justify-content: end;
     }
@@ -314,6 +314,13 @@ a:hover {
   animation-delay: -1s;
   white-space: nowrap;
   animation-play-state: running;
+}
+
+@media only screen and (max-width: 800px) {
+  .child {
+  padding: 40px;
+  font-size: 100px;
+  }
 }
 
 @keyframes right-to-left {
