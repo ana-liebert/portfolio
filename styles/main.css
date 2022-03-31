@@ -181,6 +181,16 @@ body {
     }
   }
 
+
+  @media only screen and (max-width: 200px) {
+    .body-img {
+    height: 250px;
+    width: 375px;
+    display: flex;
+    justify-content: end;
+    }
+  }
+
   .body-text{
     display: flex;
     justify-content: start;
