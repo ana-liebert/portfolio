@@ -31,7 +31,7 @@ body {
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
     font-size: 75px;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', sans-serif;
     display: inline-block;
   }
 
@@ -182,10 +182,10 @@ body {
   }
 
 
-  @media only screen and (max-width: 200px) {
+  @media only screen and (max-width: 480px) {
     .body-img {
-    height: 250px;
-    width: 375px;
+    height: 200px;
+    width: 325px;
     display: flex;
     justify-content: end;
     }
