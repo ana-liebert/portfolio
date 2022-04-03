@@ -4,6 +4,7 @@ body {
     margin-bottom: 150px;
     background-color: rgb(14, 16, 19);
     overflow-x: hidden;
+    text-rendering: optimizeLegibility;
 }
 
 .bio {
@@ -11,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     text-align: start;
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 100px;
     animation: bio 1.4s linear;
 }
@@ -32,9 +33,12 @@ body {
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
     font-size: 75px;
-    font-family: 'Staatliches', sans-serif;
+    font-family: 'Staatliches', 'Roboto', sans-serif;
+    font-weight: 400px;
+    text-transform: uppercase;
     display: inline-block;
   }
+
 
   #f, #u, #l, #l2, #s, #t, #a, #c, #k {
     animation: intro 1.4s linear;
@@ -197,7 +201,7 @@ body {
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 20px;
   }
   .body-info {
@@ -221,7 +225,9 @@ body {
   .body-header {
   
     font-size: 50px;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400px;
     text-align: start;
 }
   .body-container {
@@ -291,7 +297,9 @@ a:hover {
   flex-direction: column;
   font-size: 25px;
   text-align: center;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', 'Roboto', sans-serif;
+  font-weight: 400px;
+  text-transform: uppercase;
 }
 
 
@@ -318,7 +326,9 @@ a:hover {
 
 .child {
   font-size: 170px;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400px;
   position: relative;
   overflow: visible;
   animation: right-to-left 13s linear infinite;
