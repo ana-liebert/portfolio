@@ -298,13 +298,17 @@ a:hover {
 }
 
 
+.parent {
+  overflow-x: hidden;
+}
+
 .child {
   font-size: 170px;
   font-family: 'Staatliches', 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 400px;
   position: relative;
-  overflow: visible;
+  overflow-x: visible;
   animation: right-to-left 13s linear infinite;
   animation-delay: -1s;
   white-space: nowrap;
@@ -398,8 +402,13 @@ a:hover {
   overflow-y: auto;
   margin-top: 80px;
   margin-bottom: 75px;
+}
 
-
+@media only screen and (max-width: 480px) {
+  .skills-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .languages, .frameworks, .databases, .tools, .start {
