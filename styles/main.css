@@ -1,3 +1,7 @@
+html {
+  margin: 0;
+}
+
 body {
     color: rgb(158, 185, 173);
     font-family: 'Barlow Condensed', sans-serif;
