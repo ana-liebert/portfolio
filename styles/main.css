@@ -11,15 +11,17 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     display: flex;
     align-items: center;
-    text-align: start;
+    text-align: end;
     font-size: 22px;
-    margin-right: 100px;
     animation: bio 1.4s linear;
 }
 
 .page-container {
     margin-top: 250px;
     margin-bottom: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -32,7 +34,7 @@ body {
 
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
-    font-size: 75px;
+    font-size: 120px;
     font-family: 'Staatliches', 'Roboto', sans-serif;
     font-weight: 400px;
     text-transform: uppercase;
@@ -223,11 +225,6 @@ padding-right: 35px;
 }
 
 
-#project1, #project2, #project3, #project4 {
-padding-top: 90px;
-padding-bottom: 90px;
-}
-
 a {
   text-decoration: none;
   color: white !important;
@@ -369,47 +366,8 @@ a:hover {
   min-width: 100vw;
   overflow-x: scroll !important;
   scrollbar-color: #94FBAB;
+  margin-right: 80px
 }
-
-
-#scroll {
-  margin-right: 30px; 
-  padding-right: 30px;
-  font-size: 36px;
-  text-align: end;
-}
-
-#S-scroll {
-  color: #BCB6FF;
-  margin: -2px;
-}
-#C-scroll {
-  color: #B8E1FF;
-  margin: -2px;
-}
-#R-scroll {
-  color: #A9FFF7;
-  margin: -2px;
-}
-#O-scroll {
-  color: #94FBAB;
-  margin: -2px;
-}
-#L-scroll {
-  color: #BCB6FF;
-  margin: -2px;
-}
-#L2-scroll {
-  color: #B8E1FF;
-  margin: -3px;
-}
-#arrow {
-  color: #A9FFF7;
-}
-#arrow-end {
-  color: #94FBAB;
-}
-
 
 
 .box {
@@ -426,6 +384,47 @@ a:hover {
 }
 @keyframes bounce-1 {
   0%   { transform: translateX(0); }
-  50%  { transform: translateX(-60px); }
+  50%  { transform: translateX(60px); }
   100% { transform: translateX(0); }
+}
+
+
+.skills-container {
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  margin-top: 80px;
+  margin-bottom: 75px;
+
+
+}
+
+.languages, .frameworks, .databases, .tools, .start {
+  scroll-snap-align: start;
+  font-size: 30px;
+  position: relative;
+  min-width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+.skill-header {
+  font-size: 200px;
+  font-family: 'Staatliches', 'Roboto', sans-serif;
+  font-weight: 400px;
+}
+
+.skill-type {
+  font-size: 100px;
+  font-family: 'Staatliches', 'Roboto', sans-serif;
+  font-weight: 400px;
 }
