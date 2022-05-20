@@ -158,25 +158,6 @@ body {
     border: solid white 5px;
   }
 
-  /* TODO --------> animations */
-  /* .hidden {
-    opacity: 0;
-  }  
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateX(50%);
-    }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-  }
-  .body-img {
-    animation: fade-in 1.4s forwards;
-  } */
-
-
   @media only screen and (max-width: 650px) {
     .body-img {
     height: 300px;
@@ -230,10 +211,6 @@ body {
     font-weight: 400px;
     text-align: start;
 }
-  .body-container {
-    margin-top: 80px !important;
-    margin-bottom: 20px !important;
-  }
   .code-link {
     margin: 20px;
   }
@@ -376,3 +353,20 @@ a:hover {
 }
 
 
+.project-parent-container {
+  scroll-snap-type: y mandatory;
+  display: flex;
+  justify-content: space-between;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+
+}
+
+#project1, #project2, #project3, #project4 {
+  scroll-snap-align: start;
+  flex-direction: row;
+  position: relative;
+  min-width: 100vw;
+  overflow-x: scroll !important;
+  scrollbar-color: #94FBAB;
+}
