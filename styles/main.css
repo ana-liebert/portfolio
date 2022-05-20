@@ -373,31 +373,59 @@ a:hover {
 
 
 #scroll {
-  margin: 20px; 
-  font-size: 26px;
+  margin-right: 30px; 
+  padding-right: 30px;
+  font-size: 36px;
+  text-align: end;
 }
 
 #S-scroll {
   color: #BCB6FF;
+  margin: -2px;
 }
 #C-scroll {
   color: #B8E1FF;
+  margin: -2px;
 }
 #R-scroll {
   color: #A9FFF7;
+  margin: -2px;
 }
 #O-scroll {
   color: #94FBAB;
+  margin: -2px;
 }
 #L-scroll {
   color: #BCB6FF;
+  margin: -2px;
 }
 #L2-scroll {
   color: #B8E1FF;
+  margin: -3px;
 }
 #arrow {
   color: #A9FFF7;
 }
 #arrow-end {
   color: #94FBAB;
+}
+
+
+
+.box {
+  text-align: end;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform-origin: left;
+  font-size: 45px;
+  margin-right: 70px;
+}
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(-60px); }
+  100% { transform: translateX(0); }
 }
