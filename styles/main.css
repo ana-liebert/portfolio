@@ -370,3 +370,34 @@ a:hover {
   overflow-x: scroll !important;
   scrollbar-color: #94FBAB;
 }
+
+
+#scroll {
+  margin: 20px; 
+  font-size: 26px;
+}
+
+#S-scroll {
+  color: #BCB6FF;
+}
+#C-scroll {
+  color: #B8E1FF;
+}
+#R-scroll {
+  color: #A9FFF7;
+}
+#O-scroll {
+  color: #94FBAB;
+}
+#L-scroll {
+  color: #BCB6FF;
+}
+#L2-scroll {
+  color: #B8E1FF;
+}
+#arrow {
+  color: #A9FFF7;
+}
+#arrow-end {
+  color: #94FBAB;
+}
