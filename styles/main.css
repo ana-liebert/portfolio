@@ -1,13 +1,12 @@
-html {
-  margin: 0;
+html, body {
+  margin: 0px;
+  overflow-x: hidden !important;
 }
 
 body {
     color: rgb(158, 185, 173);
     font-family: 'Barlow Condensed', sans-serif;
-    margin-bottom: 150px;
     background-color: rgb(14, 16, 19);
-    overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }
 
