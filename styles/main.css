@@ -98,22 +98,22 @@ body {
     }
   }
 
-  #f:hover {
+  #f:hover, #s-skill:hover, #w-work:hover {
     color: #BCB6FF;
   }
-  #u:hover {
+  #u:hover, #k-skill:hover, #o-work:hover {
     color: #B8E1FF;
   }
-  #l:hover {
+  #l:hover, #i-skill:hover, #r-work:hover {
     color: #A9FFF7;
   }
-  #l2:hover {
+  #l2:hover, #l-skill:hover, #k-work:hover {
     color: #94FBAB;
   }
-  #s:hover {
+  #s:hover, #l2-skill:hover {
     color: #BCB6FF;
   }
-  #t:hover {
+  #t:hover,  #s2-skill:hover{
     color: #B8E1FF;
   }
   #a:hover {
@@ -404,7 +404,7 @@ a:hover {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   margin-top: 80px;
-  margin-bottom: 75px;
+  margin-bottom: 150px;
   overflow-x: auto;
 }
 
@@ -434,6 +434,7 @@ ul {
   font-size: 200px;
   font-family: 'Staatliches', 'Roboto', sans-serif;
   font-weight: 400px;
+  letter-spacing: -13px;
 }
 
 .skill-type {
@@ -441,3 +442,4 @@ ul {
   font-family: 'Staatliches', 'Roboto', sans-serif;
   font-weight: 400px;
 }
+
