@@ -405,6 +405,7 @@ a:hover {
   overflow-y: auto;
   margin-top: 80px;
   margin-bottom: 75px;
+  overflow-x: auto;
 }
 
 @media only screen and (max-width: 480px) {
