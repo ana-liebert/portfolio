@@ -184,11 +184,16 @@ body {
 
   .body-text{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     flex-direction: column;
     font-size: 22px;
     line-height: 20px;
+    background: black;
+    height: 500px;
+    opacity: 95%;
+    width: 60%;
+    position: relative;
   }
   .body-info {
     margin: 20px;
@@ -230,12 +235,12 @@ padding-right: 35px;
 
 a {
   text-decoration: none;
-  color: white !important;
+  color: #B8E1FF !important;
 }
 
 a:hover {
-  color: white !important;
-  text-decoration: underline;
+  color: #A9FFF7 !important;
+  
 }
 
 
@@ -246,8 +251,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  /* margin-top: 69px; */
+  margin-bottom: 10%;
 }
 
 
@@ -266,17 +271,20 @@ a:hover {
 
 
 .contact-container {
-  margin-top: 80px !important;
-  margin-bottom: 20px !important;
+  margin-top: 20px;
+  margin-bottom: 10% !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 25px;
   text-align: center;
   font-family: 'Staatliches', 'Roboto', sans-serif;
-  font-weight: 400px;
   text-transform: uppercase;
+  border: solid 1px;
+  padding: 10px 5%;
+  width: fit-content;
+  border-radius: 10px;
 }
 
 
@@ -348,12 +356,16 @@ a:hover {
   font-size: 38px;
   margin-top: 20px;
   margin-bottom: 30px;
+  text-align: right;
+  padding-left: 40px;
 }
 
 .footer-icons {
-  margin: 20px;
-  font-size: 50px;
+  /* margin-left: 40px; */
+  font-size: 34px;
   letter-spacing: 15px;
+  display: flex;
+  text-align: right;
 }
 
 
@@ -430,11 +442,18 @@ ul {
   list-style: none;
 }
 
-.skill-header {
+/* .skill-header {
   font-size: 200px;
   font-family: 'Staatliches', 'Roboto', sans-serif;
   font-weight: 400px;
   letter-spacing: -13px;
+} */
+
+.skill-header {
+      font-size: 60px;
+    font-family: 'Staatliches', 'Roboto', sans-serif;
+    margin-left: 17%;
+    margin-bottom: 30px;
 }
 
 .skill-type {
@@ -443,3 +462,154 @@ ul {
   font-weight: 400px;
 }
 
+
+
+.about-work {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 10px 16%;
+  margin-bottom: 18%;
+}
+
+.about-work h2 {
+  font-size: 40px;
+}
+
+.about-work .left h2:hover {
+  color: #A9FFF7;
+}
+
+.about-work .right {
+  border-left: 2px solid;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.about-work .left {
+  width: 58%;
+  padding-right: 30px;
+}
+
+.experience-header {
+  font-size: 60px;
+    font-family: 'Staatliches', 'Roboto', sans-serif;
+    padding: 10px 16%;
+    margin-bottom: 30px;
+}
+
+.left h2 {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.right ul {
+  list-style: circle;
+}
+
+.right ul li {
+  margin: 10px;
+}
+
+
+.selected {
+  color: #B8E1FF;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  align-items: baseline;
+}
+
+.flex p {
+  font-size: 22px;
+}
+
+.skills-left {
+  width: 100%;
+}
+
+
+.work-container {
+  width: 100%;
+  justify-content: center;
+  padding: 10px 16%;
+  margin-bottom: 10%;
+  display: flex;
+}
+.work-container .row {
+  display: flex;
+}
+
+.work-container .body-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  border: none;
+  filter: opacity(70%);
+
+}
+
+.mixtape-project, .travelr-project, .cooking-project, .memory-project {
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mixtape-project {
+  background-image: url("../images/mixtape.png");
+}
+.cooking-project {
+  background-image: url("../images/osk.png");
+}
+.travelr-project {
+  background-image: url("../images/travelr.png");
+}
+.memory-project {
+  background-image: url("../images/memorygame.png");
+}
+
+
+.back {
+  position: absolute;
+    top: 2%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.back:hover {
+  color: #A9FFF7;
+}
+
+.project-row {
+  cursor: pointer;
+}
+
+#mixtape:hover, #cooking:hover, #travelr:hover, #memory:hover {
+  filter: saturate(95%) !important;
+}
+
+.column.contact {
+  border-right: solid 1px;
+  padding-right: 40px;
+  height: 100%;
+}
+.column.contact h2 {
+  font-size: 60px;
+}
