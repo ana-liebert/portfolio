@@ -607,7 +607,6 @@ ul {
     .experience-header {
       padding: 10px 3%;
       margin-bottom: 0;
-      font-size: 55px;
   }
 
     .about-work {
@@ -679,6 +678,11 @@ align-items: start;
   margin-top: 100px;
 }
 
+.bio {
+  text-align: start;
+  margin-top: 20px;
+}
+
 }
 
 
@@ -699,6 +703,10 @@ align-items: start;
   }
   .work-container {
     flex-direction: column;
+  }
+
+  .work-container .body-img {
+    filter: unset;
   }
 
 
