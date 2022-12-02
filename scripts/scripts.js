@@ -82,4 +82,7 @@ window.onload=function(){
         for (let i = 0; i < back.length; i++) {
             back[i].addEventListener('click', hideProject, false);
             }
-    }
+
+
+            
+}

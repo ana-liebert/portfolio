@@ -5,13 +5,16 @@ html, body {
 
 body {
     color: rgb(158, 185, 173);
-    font-family: 'Barlow Condensed', sans-serif;
+    /* font-family: 'Barlow Condensed', sans-serif; */
+    /* font-family: 'Mulish', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     background-color: rgb(14, 16, 19);
     text-rendering: optimizeLegibility;
 }
 
 .bio {
-    font-family: 'Barlow Condensed', sans-serif;
+    /* font-family: 'Barlow Condensed', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     text-align: end;
@@ -32,7 +35,8 @@ body {
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
     font-size: 120px;
-    font-family: 'Staatliches', 'Roboto', sans-serif;
+    /* font-family: 'Staatliches', 'Roboto', sans-serif; */
+    font-family: 'Anton', sans-serif;
     font-weight: 400px;
     text-transform: uppercase;
     display: inline-block;
@@ -157,7 +161,8 @@ body {
   .body-header {
   
     font-size: 50px;
-    font-family: 'Staatliches', 'Roboto', sans-serif;
+    /* font-family: 'Staatliches', 'Roboto', sans-serif; */
+    font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     font-weight: 400px;
     text-align: start;
@@ -189,7 +194,8 @@ a:hover {
 
 .about-container {
   font-size: 22px;
-  font-family: 'Barlow Condensed', sans-serif;
+  /* font-family: 'Barlow Condensed', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -214,7 +220,8 @@ a:hover {
   flex-direction: row;
   font-size: 25px;
   text-align: center;
-  font-family: 'Staatliches', 'Roboto', sans-serif;
+  /* font-family: 'Staatliches', 'Roboto', sans-serif; */
+  font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   border: solid 1px;
   padding: 10px 5%;
@@ -241,8 +248,9 @@ a:hover {
 }
 
 .child {
-  font-size: 170px;
-  font-family: 'Staatliches', 'Roboto', sans-serif;
+  font-size: 150px;
+  /* font-family: 'Staatliches', 'Roboto', sans-serif; */
+  font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   font-weight: 400px;
   position: relative;
@@ -366,14 +374,16 @@ ul {
 
 .skill-header {
       font-size: 60px;
-    font-family: 'Staatliches', 'Roboto', sans-serif;
+    /* font-family: 'Staatliches', 'Roboto', sans-serif; */
+    font-family: 'Anton', sans-serif;
     margin-left: 17%;
     margin-bottom: 30px;
 }
 
 .skill-type {
   font-size: 100px;
-  font-family: 'Staatliches', 'Roboto', sans-serif;
+  /* font-family: 'Staatliches', 'Roboto', sans-serif; */
+  font-family: 'Anton', sans-serif;
   font-weight: 400px;
 }
 
@@ -408,7 +418,8 @@ ul {
 
 .experience-header {
   font-size: 60px;
-    font-family: 'Staatliches', 'Roboto', sans-serif;
+    /* font-family: 'Staatliches', 'Roboto', sans-serif; */
+    font-family: 'Anton', sans-serif;
     padding: 10px 16%;
     margin-bottom: 30px;
 }
@@ -443,6 +454,7 @@ ul {
   border-bottom: 1px solid;
   padding: 10px 0;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .flex p {
@@ -458,7 +470,7 @@ ul {
   width: 100%;
   justify-content: center;
   padding: 10px 16%;
-  margin-bottom: 10%;
+  margin-bottom: 18%;
   display: flex;
 }
 .work-container .row {
@@ -477,9 +489,11 @@ ul {
 }
 
 .mixtape-project, .travelr-project, .cooking-project, .memory-project {
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
+    background-position: start;
     height: 500px;
     width: 100%;
     display: flex;
@@ -538,6 +552,13 @@ ul {
   display: none;
 }
 
+.nav-pills .nav-link {
+  background: 0 0;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
 
 
 
@@ -592,6 +613,7 @@ ul {
     .about-work {
       flex-direction: column;
       padding: 10px 3%;
+      margin-bottom: 20%;
   }
 
   .about-work .left {
@@ -653,6 +675,10 @@ align-items: start;
   margin: 15% 15px;
 }
 
+.page-container {
+  margin-top: 100px;
+}
+
 }
 
 
@@ -671,6 +697,9 @@ align-items: start;
   .desktop-head {
     display: none !important;
   }
+  .work-container {
+    flex-direction: column;
+  }
 
 
 
@@ -679,10 +708,26 @@ align-items: start;
 }
 
 .page-container {
-  margin-top: 121px;
-  margin-bottom: 150px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
+.contact-container {
+  width: 96%;
+}
+
+.column.footer p {
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (max-width: 370px){
+
+  #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
+    font-size: calc(14vw + 8vh + 2vmin);
+}
+  
 }
 
 
@@ -704,7 +749,7 @@ align-items: start;
 }
 @media only screen and (min-width: 1200px) {
   #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
-  font-size: 180px;
+  font-size: 170px;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -712,4 +757,25 @@ align-items: start;
   margin: -4px;
   font-size: 212px;
   }
+}
+
+p, li, ul, .flex p {
+  font-size: 18px;
+}
+
+.left h2, .right h3 {
+  font-size: 30px;
+}
+
+.footer p {
+  font-size: 20px;
+  font-family: 'Open Sans';
+}
+
+.container-fluid.d-flex.justify-content-start {
+  font-size: 21px;
+}
+
+.experience-header {
+  text-transform: uppercase !important;
 }
