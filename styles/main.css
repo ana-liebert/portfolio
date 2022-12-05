@@ -23,8 +23,8 @@ body {
 }
 
 .page-container {
-    margin-top: 250px;
-    margin-bottom: 250px;
+    margin-top: 15%;
+    margin-bottom: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -689,6 +689,10 @@ align-items: start;
 
 @media only screen and (max-width: 500px) {
 
+  .work-container .body-img {
+    margin-bottom: 30px;
+    }
+
   .skills-container {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -716,8 +720,8 @@ align-items: start;
 }
 
 .page-container {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
 
 .contact-container {
@@ -726,6 +730,18 @@ align-items: start;
 
 .column.footer p {
   font-size: 20px;
+}
+
+.about-work h2, .about-work h3 {
+  font-size: 22px !important;
+}
+
+p, li, ul, .flex p {
+  font-size: 16px !important;
+}
+
+.experience-header {
+font-size: 50px;
 }
 
 }
