@@ -720,7 +720,7 @@ align-items: start;
 }
 
 .page-container {
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -746,15 +746,21 @@ font-size: 50px;
 
 }
 
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 460px){
 
   #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
     font-size: calc(14vw + 8vh + 2vmin);
 }
-  
+
 }
 
+@media only screen and (max-width: 370px) {
 
+  .page-container {
+    margin-top: 70px;
+  }
+  
+}
 
 @media only screen and (min-width: 600px) {
   #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
