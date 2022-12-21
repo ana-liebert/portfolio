@@ -752,6 +752,15 @@ font-size: 50px;
     font-size: calc(14vw + 8vh + 2vmin);
 }
 
+#memory, #travelr, #cooking {
+  display: none !important;
+}
+
+.contact-container {
+  align-items: center;
+}
+
+
 }
 
 @media only screen and (max-width: 370px) {
