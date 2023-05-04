@@ -14,7 +14,8 @@ body {
     /* font-family: 'Barlow Condensed', sans-serif; */
     /* font-family: 'Mulish', sans-serif; */
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(14, 16, 19);
+    /* background-color: rgb(14, 16, 19); */
+    background-color: #1c1c1c;
     text-rendering: optimizeLegibility;
 }
 
@@ -134,31 +135,25 @@ body {
   }
 
   .body-img {
-    /* height: 450px;
-    width: 580px; */
-    width: 100%;
+ 
+    width: 120%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid white 2px;
   }
 
   .body-text{
     display: flex;
-    /* justify-content: center; */
     justify-content: start;
     align-items: start;
     flex-direction: column;
     font-size: 22px;
     line-height: 20px;
-    /* background: black; */
     height: 500px;
     opacity: 95%;
-    /* width: 60%; */
     position: relative;
   }
   .body-info {
-    /* margin: 20px; */
     margin: 20px 0;
   }
   .icons {
@@ -177,13 +172,13 @@ body {
     text-align: start;
 }
   .code-link {
-    /* margin: 20px; */
     margin: 0 0 20px 0;
   }
 
 .navbar {
 font-size: 24px;
-background-color: rgb(14, 16, 19) !important;
+/* background-color: rgb(14, 16, 19) !important; */
+background-color: #1c1c1c !important;
 padding-left: 2%;
 padding-right: 2%;
 flex-wrap: nowrap !important;
@@ -216,7 +211,6 @@ a:hover {
   text-align: center;
   padding-right: 320px;
   padding-left: 320px;
-  /*  */
   margin-top: 13%;
 }
 
@@ -321,9 +315,6 @@ a:hover {
   min-width: 100vw;
   overflow-x: scroll !important;
   scrollbar-color: #94FBAB;
-  /* margin-right: 80px */
-  
-  /*  */
   padding: 10px 16%;
   scroll-margin-top: 10px;
 }
@@ -564,7 +555,49 @@ ul {
 
 
 
+p, li, ul, .flex p {
+  font-size: 18px;
+}
 
+.left h2, .right h3 {
+  font-size: 30px;
+}
+
+.footer p {
+  font-size: 20px;
+  font-family: 'Open Sans';
+}
+
+.container-fluid.d-flex.justify-content-start {
+  font-size: 21px;
+}
+
+.experience-header {
+  text-transform: uppercase !important;
+}
+
+
+.body-row{
+  position: relative;
+}
+.arrow {
+  position: absolute;
+    right: -10%;
+    bottom: 60%;
+    background: white;
+    border-radius: 50%;
+    padding: 1%;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.experience-header2{
+  font-size: 60px;
+  font-family: 'Anton', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 16%;
+}
 
 
 
@@ -572,15 +605,6 @@ ul {
 /* ////////////////////////////////////////////////////////////// */
 /* MOBILE */
 /* ////////////////////////////////////////////////////////////// */
-
-@media only screen and (min-width: 1400px) {
-  .icons {
-  margin: 20px;
-  font-size: 34px;
-  letter-spacing: 3px;
-  line-height: 1.5;
-  }
-}
 
 @media only screen and (max-width: 1000px) {
   .about-text {
@@ -640,9 +664,6 @@ ul {
   margin-bottom: 20%;
 }
 
-/* .body-text {
-  width: 90%;
-} */
 
 .contact-container {
 flex-direction: column;
@@ -685,13 +706,6 @@ align-items: start;
   margin-top: 20px;
 }
 
-
-}
-
-/*  */
-@media only screen and (max-width: 800px) {
-
-
 .body-row {
   display: flex;
   flex-direction: column;
@@ -719,7 +733,8 @@ font-size: 25px;
   width: 65%;
   margin: 0 18%;
 }
-  
+
+
 }
 
 
@@ -781,6 +796,11 @@ p, li, ul, .flex p {
 font-size: 50px;
 }
 
+.body-img {
+  width: 100%;
+  margin: 10% 0;
+}
+
 }
 
 @media only screen and (max-width: 460px){
@@ -827,55 +847,21 @@ font-size: 50px;
   #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
   font-size: 170px;
   }
+  .body-img {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1400px) {
   #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
   margin: -4px;
   font-size: 212px;
   }
+  .icons {
+    margin: 20px;
+    font-size: 34px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    }
 }
 
-p, li, ul, .flex p {
-  font-size: 18px;
-}
 
-.left h2, .right h3 {
-  font-size: 30px;
-}
-
-.footer p {
-  font-size: 20px;
-  font-family: 'Open Sans';
-}
-
-.container-fluid.d-flex.justify-content-start {
-  font-size: 21px;
-}
-
-.experience-header {
-  text-transform: uppercase !important;
-}
-/*  */
-
-.body-row{
-  position: relative;
-  border-bottom: solid 1px;
-}
-.arrow {
-  position: absolute;
-    right: -10%;
-    bottom: 60%;
-    background: white;
-    border-radius: 50%;
-    padding: 1%;
-    cursor: pointer;
-    pointer-events: all;
-}
-
-.experience-header2{
-  font-size: 60px;
-  font-family: 'Anton', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 16%;
-}
