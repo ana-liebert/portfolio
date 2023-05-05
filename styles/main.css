@@ -9,18 +9,18 @@ html, body {
   overflow-x: hidden !important;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
+  overflow-y: visible !important;
   overscroll-behavior-y: auto;
   scroll-behavior: smooth;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  height: 100%;
 }
 
 body {
     color: rgb(158, 185, 173);
     font-family: 'Open Sans', sans-serif;
     background-color: #1c1c1c;
-    text-rendering: optimizeLegibility;
     display: block;
 }
 
