@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 
+
 h1 {
   font-size: 0;
 }
 
 html, body {
-  margin: 0px;
   overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overscroll-behavior-y: auto;
+  scroll-behavior: smooth;
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 body {
     color: rgb(158, 185, 173);
-    /* font-family: 'Barlow Condensed', sans-serif; */
-    /* font-family: 'Mulish', sans-serif; */
     font-family: 'Open Sans', sans-serif;
-    /* background-color: rgb(14, 16, 19); */
     background-color: #1c1c1c;
     text-rendering: optimizeLegibility;
+    display: block;
 }
 
 .bio {
-    /* font-family: 'Barlow Condensed', sans-serif; */
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -42,9 +46,7 @@ body {
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r{
     margin: -3px;
     font-size: 120px;
-    /* font-family: 'Staatliches', 'Roboto', sans-serif; */
     font-family: 'Anton', sans-serif;
-    /* font-family: 'Climate Crisis', cursive; */
     font-weight: 400px;
     text-transform: uppercase;
     display: inline-block;
@@ -177,7 +179,6 @@ body {
 
 .navbar {
 font-size: 24px;
-/* background-color: rgb(14, 16, 19) !important; */
 background-color: #1c1c1c !important;
 padding-left: 2%;
 padding-right: 2%;
@@ -300,10 +301,8 @@ a:hover {
 
 
 .project-parent-container {
-  scroll-snap-type: y mandatory;
   display: flex;
   justify-content: space-between;
-  -webkit-overflow-scrolling: touch;
   overflow-y: auto;
 
 }
@@ -314,7 +313,6 @@ a:hover {
   position: relative;
   min-width: 100vw;
   overflow-x: scroll !important;
-  scrollbar-color: #94FBAB;
   padding: 10px 16%;
   scroll-margin-top: 10px;
 }
@@ -328,40 +326,7 @@ a:hover {
   font-size: 45px;
   margin-right: 70px;
 }
-.bounce-1 {
-  animation-name: bounce-1;
-  animation-timing-function: linear;
-}
-@keyframes bounce-1 {
-  0%   { transform: translateX(0); }
-  50%  { transform: translateX(60px); }
-  100% { transform: translateX(0); }
-}
 
-
-.skills-container {
-  scroll-snap-type: y mandatory;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
-  margin-top: 80px;
-  margin-bottom: 150px;
-  overflow-x: auto;
-}
-
-
-.languages, .frameworks, .databases, .tools, .start {
-  scroll-snap-align: start;
-  font-size: 30px;
-  position: relative;
-  min-width: 100vw;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
 ul {
   list-style: none;
