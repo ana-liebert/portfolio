@@ -113,12 +113,19 @@
     <h2 class="experience-header">Engineering Experience</h2>
     <div class="about-work">
         <div class="left">
-            <h2 class="blueprint selected">Blueprint Interactive</h2>
+            <h2 class="freelance selected">Freelance</h2>
+            <h2 class="blueprint">Blueprint Interactive</h2>
             <h2 class="ga">General Assembly</h2>
 
         </div>
         <div class="right">
-            <div class="blueprint-desc">
+            <div class="freelance-desc">
+                <h3>Web Developer @ Self Employed</h3>
+                <ul>
+                    <li>Developing, designing, and updating websites for various clients utilizing HTML5, CSS3, JavaScript, WordPress, PHP, Sequel Pro/MySQL, and Webflow, implementing responsive design, custom animations, and SEO best practices, testing and troubleshooting prior to deployment</li>
+                </ul>
+            </div>
+            <div class="blueprint-desc hide">
                 <h3>Associate Developer @ <a href="https://blueprintinteractive.com/">Blueprint Interactive</a></h3>
                 <ul>
                     <li>Develop and maintain innovative sites that produce engaging user experiences and align with client goals, ranging from static landing pages to full-scale PHP based CMS websites</li>
@@ -193,7 +200,7 @@
 
         <!-- PROJECTS -->
         <h2 class="experience-header2">
-            PROJECTS <i class="fa-solid fa-arrow-right"></i>
+            PROJECTS <i id="nextBtn" class="fa-solid fa-arrow-right"></i>
           </h2> 
 
         <div class="project-parent-container">
@@ -381,6 +388,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the project containers and the next button
+            const projectContainers = document.querySelectorAll(".project-parent-container > .container");
+            const nextButton = document.getElementById("nextBtn");
+          
+            let currentProjectIndex = 0;
+          
+            // Function to show the next project
+            function showNextProject() {
+              projectContainers[currentProjectIndex].style.display = "none";
+              currentProjectIndex = (currentProjectIndex + 1) % projectContainers.length;
+              projectContainers[currentProjectIndex].style.display = "block";
+            }
+          
+            // Add a click event listener to the next button
+            nextButton.addEventListener("click", showNextProject);
+          
+            // Initially, display the first project
+            projectContainers[0].style.display = "block";
+          });
+        </script>
 
 
 </html>

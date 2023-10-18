@@ -300,14 +300,24 @@ a:hover {
 }
 
 
-.project-parent-container {
+/* .project-parent-container {
   display: flex;
   justify-content: space-between;
   overflow-y: auto;
 
+} */
+
+.project-parent-container > .container {
+  display: none;
 }
 
-#project1, #project2, #project3, #project4 {
+/* Display the first project container */
+.project-parent-container > .container:first-child {
+  display: block;
+}
+
+
+/* #project1, #project2, #project3, #project4 {
   scroll-snap-align: start;
   flex-direction: row;
   position: relative;
@@ -315,7 +325,7 @@ a:hover {
   overflow-x: scroll !important;
   padding: 10px 16%;
   scroll-margin-top: 10px;
-}
+} */
 
 
 .box {
@@ -562,6 +572,9 @@ p, li, ul, .flex p {
   display: flex;
   justify-content: space-between;
   margin: 40px 16%;
+  /* width: 85%; */
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
 }
 
 
@@ -580,6 +593,14 @@ p, li, ul, .flex p {
 
 
 @media only screen and (max-width: 800px) {
+
+  .container {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+}
+
+
   .child {
   padding: 40px;
   font-size: 120px;
@@ -676,10 +697,12 @@ align-items: start;
   flex-direction: column;
   padding-bottom: 5%;
   border-bottom: unset !important;
+  width: 100%;
 }
 .body-text {
   height: 371px;
-  padding: 10px 3%;
+  width: 100%;
+  /* padding: 10px 3%; */
 }
 .icons {
 margin: 0;
@@ -695,8 +718,8 @@ font-size: 25px;
 }
 
 .body-img {
-  width: 65%;
-  margin: 0 18%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 
@@ -813,7 +836,7 @@ font-size: 50px;
   font-size: 170px;
   }
   .body-img {
-    width: 100%;
+    width: 115%;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -830,3 +853,16 @@ font-size: 50px;
 }
 
 
+.project-parent-container {padding: 30px 16%;/* margin: 10px 3% !important; */width: 100%;}
+
+.container .col {
+  padding: 0;
+}
+
+i#nextBtn {
+  cursor: pointer;
+}
+
+i#nextBtn:hover {
+ color: #A9FFF7;
+}
