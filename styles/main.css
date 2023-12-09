@@ -137,12 +137,11 @@ body {
   }
 
   .body-img {
- 
-    width: 120%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+ width: 120%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ }
 
   .body-text{
     display: flex;
@@ -177,13 +176,7 @@ body {
     margin: 0 0 20px 0;
   }
 
-.navbar {
-font-size: 24px;
-background-color: #1c1c1c !important;
-padding-left: 2%;
-padding-right: 2%;
-flex-wrap: nowrap !important;
-}
+.navbar {font-size: 24px;background-color: #1c1c1c !important;padding-left: 2%;padding-right: 2%;flex-wrap: nowrap !important;padding: 10px 0;}
 
 
 a {
@@ -210,9 +203,13 @@ a:hover {
 
 .about-text {
   text-align: center;
+  max-width: 600px;
+  width: 75%;
+  padding: 0 5% !important;
+  margin: 30px auto;
   padding-right: 320px;
   padding-left: 320px;
-  margin-top: 13%;
+  /* margin-top: 13%; */
 }
 
 
@@ -317,17 +314,6 @@ a:hover {
 }
 
 
-/* #project1, #project2, #project3, #project4 {
-  scroll-snap-align: start;
-  flex-direction: row;
-  position: relative;
-  min-width: 100vw;
-  overflow-x: scroll !important;
-  padding: 10px 16%;
-  scroll-margin-top: 10px;
-} */
-
-
 .box {
   text-align: end;
   animation-duration: 1.5s;
@@ -362,12 +348,12 @@ ul {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 10px 16%;
+  /* padding: 10px 16%; */
   margin-bottom: 18%;
 }
 
 .about-work h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .about-work .left h2:hover {
@@ -387,9 +373,9 @@ ul {
 
 .experience-header {
   font-size: 60px;
-    font-family: 'Anton', sans-serif;
-    padding: 10px 16%;
-    margin-bottom: 30px;
+  font-family: 'Anton', sans-serif;
+  /* padding: 10px 16%; */
+  margin-bottom: 30px;
 }
 
 .left h2 {
@@ -532,6 +518,7 @@ ul {
 
 p, li, ul, .flex p {
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .left h2, .right h3 {
@@ -545,6 +532,7 @@ p, li, ul, .flex p {
 
 .container-fluid.d-flex.justify-content-start {
   font-size: 21px;
+  color: #BCB6FF;
 }
 
 .experience-header {
@@ -554,6 +542,7 @@ p, li, ul, .flex p {
 
 .body-row{
   position: relative;
+  margin: 5% 0;
 }
 .arrow {
   position: absolute;
@@ -571,11 +560,12 @@ p, li, ul, .flex p {
   font-family: 'Anton', sans-serif;
   display: flex;
   justify-content: space-between;
-  margin: 40px 16%;
+  /* margin: 40px 16%; */
   /* width: 85%; */
   /* max-width: 1200px; */
   /* margin: 0 auto; */
 }
+
 
 
 
@@ -585,14 +575,56 @@ p, li, ul, .flex p {
 /* ////////////////////////////////////////////////////////////// */
 
 @media only screen and (max-width: 1000px) {
+
+  .about-work h2, .about-work h3 {
+    width: 100%;
+  }
   .about-text {
     padding: 0px;
-    margin: 15px;
+    /* margin: 15px; */
   }
+  .bio {
+    text-align: start;
+  }
+  .row.intro {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .container.page-container {
+    /* padding: 10px 16%; */
+  }
+
+}
+
+@media only screen and (min-width: 1000px){
+  .container.page-container {
+    max-width: 95%;
+}
+
 }
 
 
 @media only screen and (max-width: 800px) {
+  .container.page-container {
+    padding: 0;
+  }
+  
+
+
+  h2.header.desktop-head {
+    padding: 0 5%;
+}
+
+  i#nextBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 0% !important;
+    z-index: 100;
+    bottom: 30% !important;
+    font-size: 30px !important;
+    top: unset !important;
+}
 
   .project-parent-container {
     padding: 0 !important;
@@ -601,7 +633,7 @@ p, li, ul, .flex p {
   }
 
   p.p-bio {
-    padding: 10px 3%;
+    padding: 10px 5%;
   }
 
   .container {
@@ -627,13 +659,13 @@ p, li, ul, .flex p {
     }
 
     .experience-header {
-      padding: 10px 3%;
+      padding: 10px 5%;
       margin-bottom: 0;
   }
 
     .about-work {
       flex-direction: column;
-      padding: 10px 3%;
+      padding: 10px 5%;
       margin-bottom: 20%;
   }
 
@@ -661,7 +693,7 @@ p, li, ul, .flex p {
 }
 
 
-.contact-container {flex-direction: column;align-items: start;margin: 10px 3%;width: 100%;max-width: 95%;}
+.contact-container {flex-direction: column;align-items: start;margin: 10px 5%;width: 100%;max-width: 90%;}
 
 .footer {
   padding-left: 0px;
@@ -687,7 +719,7 @@ p, li, ul, .flex p {
 }
 
 .about-text {
-  margin: 15% 15px;
+  /* margin: 15% 15px; */
 }
 
 .page-container {
@@ -707,7 +739,7 @@ p, li, ul, .flex p {
   width: 100%;
 }
 .body-text {
-  height: 371px;
+  height: 100%;
   width: 100%;
   /* padding: 10px 3%; */
 }
@@ -717,7 +749,7 @@ font-size: 25px;
 }
 
 .experience-header2 {
-  margin: 10px 3% !important;
+  margin: 10px 5% !important;
 }
 
 #project1, #project2, #project3, #project4 {
@@ -732,7 +764,23 @@ font-size: 25px;
 
 }
 
+@media (max-width: 650px) {
+  .about-work h2, .about-work h3 {
+    width: 100%;
+}
 
+}
+
+@media only screen and (max-width: 570px)  {
+  .mobile-head {
+    display: block !important;
+    padding: 0 5%;
+  }
+  
+  .desktop-head {
+    display: none !important;
+  }
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -745,13 +793,7 @@ font-size: 25px;
     margin-bottom: 20px;
   }
 
-  .mobile-head {
-    display: block !important;
-  }
-  
-  .desktop-head {
-    display: none !important;
-  }
+ 
   .work-container {
     flex-direction: column;
   }
@@ -781,6 +823,7 @@ font-size: 25px;
 
 .about-work h2, .about-work h3 {
   font-size: 22px !important;
+  width: 100%;
 }
 
 p, li, ul, .flex p {
@@ -793,7 +836,11 @@ font-size: 50px;
 
 .body-img {
   width: 100%;
-  margin: 10% 0;
+  margin: 0 0 10%;
+}
+
+.flex a {
+  width: 100%;
 }
 
 }
@@ -812,6 +859,27 @@ font-size: 50px;
   align-items: center;
 }
 
+i#nextBtn {
+  right: 50% !important;
+  bottom: 2% !important;
+}
+
+.container-fluid.d-flex.justify-content-end {
+  justify-content: center !important;
+  margin: 10px 0;
+}
+
+.navbar {
+  flex-wrap: wrap !important;
+}
+.container-fluid.d-flex.justify-content-start {
+  justify-content: center !important;
+}
+.mobile-head {
+  margin-top: 7%;
+}
+
+
 
 }
 
@@ -820,17 +888,33 @@ font-size: 50px;
   .page-container {
     margin-top: 90px;
   }
+  .container-fluid.d-flex.justify-content-end {
+    width: 359px;
+    padding: 10px 0;
+}
+#f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
+  font-size: 90px !important;
+}
+.navbar {
+  flex-wrap: wrap !important;
+}
   
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 700px) {
+  #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
+  font-size: 107px;
+  }
+}
+
+/* @media only screen and (min-width: 600px) {
   #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
   font-size: 130px;
   }
-}
+} */
 @media only screen and (min-width: 800px) {
   #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
-  font-size: 145px;
+  font-size: 128px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -843,7 +927,7 @@ font-size: 50px;
   font-size: 170px;
   }
   .body-img {
-    width: 115%;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -860,7 +944,9 @@ font-size: 50px;
 }
 
 
-.project-parent-container {padding: 30px 16%;/* margin: 10px 3% !important; */width: 100%;}
+
+
+.project-parent-container {/* padding: 30px 16%; *//* margin: 10px 3% !important; */width: 100%;position: relative;/* max-width: 1200px; *//* padding: 10px 16%; */}
 
 .container .col {
   padding: 0;
@@ -868,8 +954,71 @@ font-size: 50px;
 
 i#nextBtn {
   cursor: pointer;
+  position: absolute;
+  right: 0%;
+  z-index: 100;
+  top: 28%;
+  font-size: 26px;
+  background: rgb(158, 185, 173);
+  border-radius: 50%;
+  padding: 4px;
+  color: black;
+  border: solid #808080b3;
 }
 
 i#nextBtn:hover {
- color: #A9FFF7;
+color: #A9FFF7;
+}
+
+@media (min-width: 720px) {
+
+  .container.page-container {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 556px) {
+.container.page-container {
+  max-width: unset;
+  padding: 0;
+}
+}
+
+.row.intro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.inner {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.body-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.project-parent-container {
+  position: relative;
+}
+
+@media (min-width: 992px){
+.col-lg-8 {
+    width: 75%;
+    padding: 0;
+}
+}
+
+.col-lg-8.col-sm-12.js-scroll {
+  padding: 0 !important;
 }

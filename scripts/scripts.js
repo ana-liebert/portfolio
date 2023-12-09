@@ -38,7 +38,4 @@ window.onload=function(){
         freelance.addEventListener("click", hideBoth);
         
 
-            
-
-
 }

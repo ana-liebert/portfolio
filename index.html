@@ -12,9 +12,11 @@
     <link rel="icon" href="favicon.ico?" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300;400;500&family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Oswald:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300;400;500&family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Oswald:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Staatliches&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce889213de.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -24,7 +26,9 @@
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="styles/main.css?v=1.2" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
 
 </head>
 
@@ -32,7 +36,7 @@
 
 
     <h1 style="display: hidden">Ana Liebert</h1>
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg inner">
         <div class="container-fluid d-flex justify-content-start">
             Brooklyn, NY
         </div>
@@ -47,335 +51,403 @@
     </header>
 
 
+    <div class="main-content">
+        <div class="inner">
+            <div class="container page-container">
+                <div class="row intro">
+                    <div class="col-lg-8 col-sm-12 js-scroll">
+                        <h2 class="header desktop-head">
+                            <span id="f">F</span>
+                            <span id="u">u</span>
+                            <span id="l">l</span>
+                            <span id="l2">l</span>
+                            <span> </span>
+                            <span id="s">S</span>
+                            <span id="t">t</span>
+                            <span id="a">a</span>
+                            <span id="c">c</span>
+                            <span id="k">k</span>
+                            <br>
+                            <span id="d">D</span>
+                            <span id="e">e</span>
+                            <span id="v">v</span>
+                            <span id="e2">e</span>
+                            <span id="l3">l</span>
+                            <span id="o">o</span>
+                            <span id="p">p</span>
+                            <span id="e3">e</span>
+                            <span id="r">r</span>
+                        </h2>
+                        <h2 class="header mobile-head">
+                            <span id="f">F</span>
+                            <span id="u">u</span>
+                            <span id="l">l</span>
+                            <span id="l2">l</span>
+                            <span> </span><br>
+                            <span id="s">S</span>
+                            <span id="t">t</span>
+                            <span id="a">a</span>
+                            <span id="c">c</span>
+                            <span id="k">k</span>
+                            <br>
+                            <span id="d">D</span>
+                            <span id="e">e</span>
+                            <span id="v">v</span>
+                            <span id="e2">e</span>
+                            <span id="l3">l</span>
+                            <span id="l3">-</span>
+                            <br>
+                            <span id="o">o</span>
+                            <span id="p">p</span>
+                            <span id="e3">e</span>
+                            <span id="r">r</span>
+                        </h2>
 
-    <div class="container page-container">
-        <div class="row">
-            <div class="col-lg-8 col-sm-12 js-scroll">
-                <h2 class="header desktop-head">
-                    <span id="f">F</span>
-                    <span id="u">u</span>
-                    <span id="l">l</span>
-                    <span id="l2">l</span>
-                    <span> </span>
-                    <span id="s">S</span>
-                    <span id="t">t</span>
-                    <span id="a">a</span>
-                    <span id="c">c</span>
-                    <span id="k">k</span>
-                    <br>
-                    <span id="d">D</span>
-                    <span id="e">e</span>
-                    <span id="v">v</span>
-                    <span id="e2">e</span>
-                    <span id="l3">l</span>
-                    <span id="o">o</span>
-                    <span id="p">p</span>
-                    <span id="e3">e</span>
-                    <span id="r">r</span>
-                </h2>
-                <h2 class="header mobile-head">
-                    <span id="f">F</span>
-                    <span id="u">u</span>
-                    <span id="l">l</span>
-                    <span id="l2">l</span>
-                    <span> </span><br>
-                    <span id="s">S</span>
-                    <span id="t">t</span>
-                    <span id="a">a</span>
-                    <span id="c">c</span>
-                    <span id="k">k</span>
-                    <br>
-                    <span id="d">D</span>
-                    <span id="e">e</span>
-                    <span id="v">v</span>
-                    <span id="e2">e</span>
-                    <span id="l3">l</span>
-                    <span id="l3">-</span>
-                    <br>
-                    <span id="o">o</span>
-                    <span id="p">p</span>
-                    <span id="e3">e</span>
-                    <span id="r">r</span>
-                </h2>
+                    </div>
 
-            </div>
-
-            <div class="col bio">
-                <p class="p-bio">Hello World, I'm Ana. I'm a developer with a deep appreciation for design and user
-                    experience.
-                    I'm passionate about creating responsive, optimized, and efficient websites, while always
-                    working towards learning more.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="experience-header">Engineering Experience</h2>
-    <div class="about-work">
-        <div class="left">
-            <h2 class="freelance selected">Freelance</h2>
-            <h2 class="blueprint">Blueprint Interactive</h2>
-            <h2 class="ga">General Assembly</h2>
-
-        </div>
-        <div class="right">
-            <div class="freelance-desc">
-                <h3>Web Developer @ Self Employed</h3>
-                <ul>
-                    <li>Developing, designing, and updating websites for various clients utilizing HTML5, CSS3, JavaScript, WordPress, PHP, Sequel Pro/MySQL, and Webflow, implementing responsive design, custom animations, and SEO best practices, testing and troubleshooting prior to deployment</li>
-                </ul>
-            </div>
-            <div class="blueprint-desc hide">
-                <h3>Associate Developer @ <a href="https://blueprintinteractive.com/">Blueprint Interactive</a></h3>
-                <ul>
-                    <li>Develop and maintain innovative sites that produce engaging user experiences and align with client goals, ranging from static landing pages to full-scale PHP based CMS websites</li>
-                    <li>Collaborate with team members to design, develop, and maintain user interfaces and features for compelling web applications that exceed the needs of end users</li>
-                    <li>Apply knowledge of software design principles and methods to develop web applications and write high-quality code according to clients’ practical requirements, implementing scalability and producing pixel-perfect UI’s optimized for speed and performance </li>
-                </ul>
-            </div>
-            <div class="ga-desc hide">
-                <h3>Fellow @ <a href="https://generalassemb.ly/">General Assembly</a></h3>
-                <ul>
-                    <li>Participated in a 12 week, full-time (60+ hrs/wk) immersive course on software engineering and web development concepts, practical use-cases, Git flow, and industry best practices</li>
-                    <li>Completed coursework and personal projects inclusive of multiple fullstack applications with full CRUD functionality, leveraging technologies including HTML5, CSS3, JavaScript, jQuery, Node.js/Express, MongoDB, Python3/Django, ReactJS, PostgreSQL, and more</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="experience-header">Skills</h2>
-    <div class="about-work">
-        <div class="skills-left">
-            <div class="flex">
-                <h2>Languages</h2> 
-                <p>Javascript, HTML, CSS, Python, PHP</p>
-            </div>
-            <div class="flex">
-                <h2>Frameworks</h2> 
-                <p>React, jQuery, Node.js, Django, Express, Bootstrap</p>
-            </div>
-            <div class="flex">
-                <h2>Databases</h2> 
-                <p>SQL, PostgreSQL, MongoDB, Mongoose</p>
-            </div>
-            <div class="flex">
-                <h2>Tools</h2> 
-                <p>Git, Github, Heroku, Netlify, Docker, Postman, Terminal</p>
-            </div>
-            <div class="flex">
-                <h2>CMS</h2> 
-                <p>Wordpress, Drupal</p>
+                    <div class="col bio">
+                        <p class="p-bio">Hello World, I'm Ana. I'm a developer with a deep appreciation for design and
+                            user
+                            experience.
+                            I'm passionate about creating responsive, optimized, and efficient websites, while always
+                            working towards learning more.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-        </div>
+            <h2 class="experience-header">Engineering Experience</h2>
+            <div class="about-work">
+                <div class="left">
+                    <h2 class="freelance selected">Freelance</h2>
+                    <h2 class="blueprint">Blueprint Interactive</h2>
+                    <h2 class="ga">General Assembly</h2>
 
-    </div>
-
-
-    <h2 class="experience-header">Some sites I've worked on</h2>
-    <div class="about-work">
-        <div class="skills-left sites">
-            <div class="flex">
-                <a href="https://dccc.org/">dcc.org</a>
+                </div>
+                <div class="right">
+                    <div class="freelance-desc">
+                        <h3>Web Developer @ Self Employed</h3>
+                        <ul>
+                            <li>Developing, designing, and updating websites for various clients utilizing HTML5, CSS3,
+                                JavaScript, WordPress, PHP, Sequel Pro/MySQL, and Webflow, implementing responsive
+                                design, custom animations, and SEO best practices, testing and troubleshooting prior to
+                                deployment</li>
+                        </ul>
+                    </div>
+                    <div class="blueprint-desc hide">
+                        <h3>Associate Developer @ <a target="_blank" href="https://blueprintinteractive.com/">Blueprint
+                                Interactive</a></h3>
+                        <ul>
+                            <li>Develop and maintain innovative sites that produce engaging user experiences and align
+                                with client goals, ranging from static landing pages to full-scale PHP based CMS
+                                websites</li>
+                            <li>Collaborate with team members to design, develop, and maintain user interfaces and
+                                features for compelling web applications that exceed the needs of end users</li>
+                            <li>Apply knowledge of software design principles and methods to develop web applications
+                                and write high-quality code according to clients’ practical requirements, implementing
+                                scalability and producing pixel-perfect UI’s optimized for speed and performance </li>
+                        </ul>
+                    </div>
+                    <div class="ga-desc hide">
+                        <h3>Fellow @ <a target="_blank" href="https://generalassemb.ly/">General Assembly</a></h3>
+                        <ul>
+                            <li>Participated in a 12 week, full-time (60+ hrs/wk) immersive course on software
+                                engineering and web development concepts, practical use-cases, Git flow, and industry
+                                best practices</li>
+                            <li>Completed coursework and personal projects inclusive of multiple fullstack applications
+                                with full CRUD functionality, leveraging technologies including HTML5, CSS3, JavaScript,
+                                jQuery, Node.js/Express, MongoDB, Python3/Django, ReactJS, PostgreSQL, and more</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="flex">
-                <a href="https://groundworkcollaborative.org/">groundworkcollaborative.org</a>
-            </div>
-            <div class="flex">
-                <a href="https://housingnarrativelab.org/">housingnarrativelab.org</a>
-            </div>
-            <div class="flex">
-                <a href="https://portal.displacementalert.org/">portal.displacementalert.org</a>
-            </div>
-            <div class="flex">
-                <a href="https://janepac.com/">janepac.com</a>
-            </div>
-            <div class="flex">
-                <a href="https://afscme.org/">afscme.org</a>
+
+            <h2 class="experience-header">Skills</h2>
+            <div class="about-work">
+                <div class="skills-left">
+                    <div class="flex">
+                        <h2>Languages</h2>
+                        <p>JavaScript, HTML, CSS, PHP, Python</p>
+                    </div>
+                    <div class="flex">
+                        <h2>Frameworks</h2>
+                        <p>React, jQuery, Django, Bootstrap</p>
+                    </div>
+                    <div class="flex">
+                        <h2>Databases</h2>
+                        <p>MySQL, PostgreSQL</p>
+                    </div>
+                    <div class="flex">
+                        <h2>Systems & Tools</h2>
+                        <p>Github, Sequel Pro, Heroku, Postman, Google Analytics & Search Console</p>
+                    </div>
+                    <div class="flex">
+                        <h2>CMS</h2>
+                        <p>Wordpress, Webflow</p>
+                    </div>
+                    <div class="flex">
+                        <h2>Design</h2>
+                        <p>Figma, Sketch, Adobe Photoshop, Webflow, LottieFiles</p>
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
 
-    </div>
+            <h2 class="experience-header">Some websites I've built</h2>
+            <div class="about-work">
+                <div class="skills-left sites">
+                    <div class="flex">
+                        <a target="_blank" href="https://stoptheblame.org/">stoptheblame.org</a>
+                        <p>Blueprint Interactive</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://noplaceforhateca.org/">noplaceforhateca.org</a>
+                        <p>Blueprint Interactive</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://ballot.org/">ballot.org</a>
+                        <p>Blueprint Interactive</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://www.jnanatx.com/">jnanatx.com</a>
+                        <p>Freelance</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://www.profoundtx.com/">profoundtx.com</a>
+                        <p>Freelance</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://defendourvets.com/">defendourvets.com</a>
+                        <p>Blueprint Interactive</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://www.smartersafer.org/">smartersafer.org</a>
+                        <p>Blueprint Interactive</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://www.kynexistx.com/">kynexistx.com</a>
+                        <p>Freelance</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://schoolhouseballot.com/">schoolhouseballot.org</a>
+                        <p>Blueprint Interactive</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://crystalquade.com/">crystalquade.com</a>
+                        <p>Blueprint Interactive</p>
+                    </div>
+                    <div class="flex">
+                        <a target="_blank" href="https://shootinla.com/">shootinla.com</a>
+                        <p>Freelance</p>
+                    </div>
+                </div>
 
-        <!-- PROJECTS -->
-        <h2 class="experience-header2">
-            PROJECTS <i id="nextBtn" class="fa-solid fa-arrow-right"></i>
-          </h2> 
+            </div>
 
-        <div class="project-parent-container">
+            <!-- PROJECTS -->
+            <h2 class="experience-header2">
+                PROJECTS
+            </h2>
 
-            <div class="container body-container" id="project1">
-                <div class="row body-row">
-                    <div class="col">
-                        <div class="body-text">
-                            <div class="code-link">
-                                <h1 class="body-header" id="project1-header">Mixtape</h1>
-                                <a href="https://github.com/ana-liebert/mixtape-frontend" target="_blank">GITHUB FRONT, </a>
-                                <a href="https://github.com/ana-liebert/mixtape-backend" target="_blank">GITHUB BACK, </a>
-                                <a href="https://alieb-mixtape.netlify.app/" target="_blank">LIVE</a>
-                            </div>
-                            <div class="body-info">
-                                <p>Main technologies: React, Python, Django, PostgreSQL</p>
-                                <p>Browse and listen to curated 1hr mixes from Mixtape hosts. Signup and post, upate, or
-                                    delete your own mix.</p>
-                            </div>
-    
-                            <div class="icons">
-                                <i class="devicon-react-original"></i>
-                                <i class="devicon-django-plain"></i>
-                                <i class="devicon-python-plain"></i>
-                                <i class="devicon-postgresql-plain"></i>
-                                <i class="devicon-javascript-plain"></i>
-                                <i class="devicon-html5-plain"></i>
-                                <i class="devicon-css3-plain"></i>
-                                <i class="devicon-bootstrap-plain"></i>
+
+
+            <div class="project-parent-container">
+                <i id="nextBtn" class="fa-solid fa-arrow-right"></i>
+
+                <div class="container body-container" id="project1">
+                    <div class="row body-row">
+                        <div class="col">
+                            <div class="body-text">
+                                <div class="code-link">
+                                    <h1 class="body-header" id="project1-header">Mixtape</h1>
+                                    <a target="_blank" href="https://github.com/ana-liebert/mixtape-frontend"
+                                        target="_blank">GITHUB FRONT, </a>
+                                    <a target="_blank" href="https://github.com/ana-liebert/mixtape-backend"
+                                        target="_blank">GITHUB BACK, </a>
+                                    <a target="_blank" href="https://alieb-mixtape.netlify.app/"
+                                        target="_blank">LIVE</a>
+                                </div>
+                                <div class="body-info">
+                                    <p>Main technologies: React, Python, Django, PostgreSQL</p>
+                                    <p>Browse and listen to curated 1hr mixes from Mixtape hosts. Signup and post,
+                                        upate, or
+                                        delete your own mix.</p>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="devicon-react-original"></i>
+                                    <i class="devicon-django-plain"></i>
+                                    <i class="devicon-python-plain"></i>
+                                    <i class="devicon-postgresql-plain"></i>
+                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-html5-plain"></i>
+                                    <i class="devicon-css3-plain"></i>
+                                    <i class="devicon-bootstrap-plain"></i>
+                                </div>
                             </div>
                         </div>
+                        <div id="scroll-work" class="col">
+                            <a target="_blank" href="https://alieb-mixtape.netlify.app/" target="_blank">
+                                <img class="body-img hidden" src="images/mixtapemock.jpg">
+                            </a>
+                        </div>
+
                     </div>
-                    <div id="scroll-work" class="col">
-                        <a href="https://alieb-mixtape.netlify.app/" target="_blank">
-                            <img class="body-img hidden" src="images/mixtapemock.jpg">
-                        </a>
+                </div>
+
+                <div class="container body-container" id="project2">
+                    <div class="row body-row">
+                        <div class="col">
+                            <div class="body-text">
+                                <div class="code-link">
+                                    <h1 class="body-header" id="project2-header">Travelr</h1>
+                                    <a target="_blank" href="https://github.com/ana-liebert/travelr"
+                                        target="_blank">GITHUB, </a>
+                                    <a target="_blank" href="https://app-travelr.herokuapp.com/"
+                                        target="_blank">LIVE</a>
+                                </div>
+                                <div class="body-info">
+                                    <p>Main technologies: Python, Django, PostgreSQL</p>
+                                    <p>Browse, and contribute to Travelr guides for cities around the world.</p>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="devicon-django-plain"></i>
+                                    <i class="devicon-python-plain"></i>
+                                    <i class="devicon-postgresql-plain"></i>
+                                    <i class="devicon-html5-plain"></i>
+                                    <i class="devicon-css3-plain"></i>
+                                    <i class="devicon-bootstrap-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a target="_blank" href="https://app-travelr.herokuapp.com/" target="_blank">
+                                <img class="body-img" alt="Mixtape Application created by Ana Liebert"
+                                    src="images/travlrmock.jpg">
+                            </a>
+                        </div>
+
+                        <div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container body-container" id="project3">
+                    <div class="row body-row">
+                        <div class="col">
+                            <div class="body-text">
+                                <div class="code-link">
+                                    <h1 class="body-header" id="project3-header">The Open Source Kitchen</h1>
+                                    <a target="_blank" href="https://github.com/ana-liebert/open-source-kitchen"
+                                        target="_blank">GITHUB, </a>
+                                    <a target="_blank" href="https://opensourcekitchen.herokuapp.com/recipeblog/home"
+                                        target="_blank">LIVE</a>
+                                </div>
+                                <div class="body-info">
+                                    <p>Main technologies: Express, Node.js, MongoDB </p>
+                                    <p>Browse, post, and write reviews on this recipe blog.</p>
+                                </div>
+                                <div class="icons">
+                                    <i class="devicon-mongodb-plain"></i>
+                                    <i class="devicon-express-original"></i>
+                                    <i class="devicon-nodejs-plain"></i>
+                                    <i class="devicon-css3-plain"></i>
+                                    <i class="devicon-bulma-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a target="_blank" href="https://opensourcekitchen.herokuapp.com/recipeblog/home"
+                                target="_blank">
+                                <img class="body-img" alt="Cooking Blog created by Ana Liebert"
+                                    src="images/opensourcemock.jpg">
+                            </a>
+                        </div>
+
+                        <div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container body-container" id="project4">
+                    <div class="row body-row">
+                        <div class="col">
+                            <div class="body-text">
+                                <div class="code-link">
+                                    <h1 class="body-header" id="project3-header">Memory Game</h1>
+                                    <a target="_blank" href="https://git.generalassemb.ly/analiebert/concentrationGame"
+                                        target="_blank">GITHUB</a>
+                                    <a target="_blank"
+                                        href="https://pages.git.generalassemb.ly/analiebert/concentrationGame/"
+                                        target="_blank">LIVE</a>
+                                </div>
+                                <div class="body-info">
+                                    <p>Main technologies: Javascript, jQuery, HTML, CSS </p>
+                                    <p>Test your memory by finding the matches in the deck. Keep playing to beat your
+                                        time.</p>
+                                </div>
+
+                                <div class="icons">
+                                    <i class="devicon-javascript-plain"></i>
+                                    <i class="devicon-jquery-plain"></i>
+                                    <i class="devicon-html5-plain"></i>
+                                    <i class="devicon-css3-plain"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <a target="_blank" href="https://pages.git.generalassemb.ly/analiebert/concentrationGame/"
+                                target="_blank">
+                                <img class="body-img" alt="Memory game created by Ana Liebert"
+                                    src="images/concentrationmock.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PROJECTS -->
+
+
+
+            <div class="container about-container">
+                <div class="row">
+                    <div class="col about-text">
+                        <p>When I'm not coding, you can catch me cooking, exploring new places, taking <a
+                                target="_blank" target="_blank"
+                                href="https://ana-liebert.github.io/photography/">photos</a>, or making <a
+                                href="https://open.spotify.com/playlist/0pIHgtIk5rIIDO4HfcqNdQ"
+                                target="_blank">playlists</a>
+                            and <a target="_blank" href="https://soundcloud.com/ANAMOV" target="_blank">mixes</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="scroll-contact" class="container contact-container">
+
+                <div class="column contact">
+                    <h2>Contact</h2>
+                </div>
+                <div class="column footer">
+                    <p>analiebert.ny@gmail.com</p>
+                    <div class="footer-icons">
+                        <a target="_blank" href="mailto: analiebert.ny@gmail.com"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/analiebert/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/ana-liebert" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
 
                 </div>
-            </div>
-    
-            <div class="container body-container" id="project2">
-                <div class="row body-row">
-                    <div class="col">
-                        <div class="body-text">
-                            <div class="code-link">
-                                <h1 class="body-header" id="project2-header">Travelr</h1>
-                                <a href="https://github.com/ana-liebert/travelr" target="_blank">GITHUB, </a>
-                                <a href="https://app-travelr.herokuapp.com/" target="_blank">LIVE</a>
-                            </div>
-                            <div class="body-info">
-                                <p>Main technologies: Python, Django, PostgreSQL</p>
-                                <p>Browse, and contribute to Travelr guides for cities around the world.</p>
-                            </div>
-    
-                            <div class="icons">
-                                <i class="devicon-django-plain"></i>
-                                <i class="devicon-python-plain"></i>
-                                <i class="devicon-postgresql-plain"></i>
-                                <i class="devicon-html5-plain"></i>
-                                <i class="devicon-css3-plain"></i>
-                                <i class="devicon-bootstrap-plain"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <a href="https://app-travelr.herokuapp.com/" target="_blank">
-                            <img class="body-img" alt="Mixtape Application created by Ana Liebert"
-                                src="images/travlrmock.jpg">
-                        </a>
-                    </div>
 
-                    <div>
-                    </div>
-                </div>
             </div>
-    
-            <div class="container body-container" id="project3">
-                <div class="row body-row">
-                    <div class="col">
-                        <div class="body-text">
-                            <div class="code-link">
-                                <h1 class="body-header" id="project3-header">The Open Source Kitchen</h1>
-                                <a href="https://github.com/ana-liebert/open-source-kitchen" target="_blank">GITHUB, </a>
-                                <a href="https://opensourcekitchen.herokuapp.com/recipeblog/home" target="_blank">LIVE</a>
-                            </div>
-                            <div class="body-info">
-                                <p>Main technologies: Express, Node.js, MongoDB </p>
-                                <p>Browse, post, and write reviews on this recipe blog.</p>
-                            </div>
-                            <div class="icons">
-                                <i class="devicon-mongodb-plain"></i>
-                                <i class="devicon-express-original"></i>
-                                <i class="devicon-nodejs-plain"></i>
-                                <i class="devicon-css3-plain"></i>
-                                <i class="devicon-bulma-plain"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <a href="https://opensourcekitchen.herokuapp.com/recipeblog/home" target="_blank">
-                            <img class="body-img" alt="Cooking Blog created by Ana Liebert"
-                                src="images/opensourcemock.jpg">
-                        </a>
-                    </div>
-
-                    <div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container body-container" id="project4">
-                <div class="row body-row">
-                    <div class="col">
-                        <div class="body-text">
-                            <div class="code-link">
-                                <h1 class="body-header" id="project3-header">Memory Game</h1>
-                                <a href="https://git.generalassemb.ly/analiebert/concentrationGame"
-                                    target="_blank">GITHUB</a>
-                                <a href="https://pages.git.generalassemb.ly/analiebert/concentrationGame/"
-                                    target="_blank">LIVE</a>
-                            </div>
-                            <div class="body-info">
-                                <p>Main technologies: Javascript, jQuery, HTML, CSS </p>
-                                <p>Test your memory by finding the matches in the deck. Keep playing to beat your time.</p>
-                            </div>
-    
-                            <div class="icons">
-                                <i class="devicon-javascript-plain"></i>
-                                <i class="devicon-jquery-plain"></i>
-                                <i class="devicon-html5-plain"></i>
-                                <i class="devicon-css3-plain"></i>
-                            </div>
-                        </div>
-    
-                    </div>
-                    <div class="col">
-                        <a href="https://pages.git.generalassemb.ly/analiebert/concentrationGame/" target="_blank">
-                            <img class="body-img" alt="Memory game created by Ana Liebert"
-                                src="images/concentrationmock.jpg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
         </div>
-    
-        <!-- PROJECTS -->
-
-
-
-    <div class="container about-container">
-        <div class="row">
-            <div class="col about-text">
-                <p>When I'm not coding, you can catch me cooking, exploring new places, taking <a target="_blank" href="https://ana-liebert.github.io/photography/">photos</a>, or making <a
-                        href="https://open.spotify.com/playlist/0pIHgtIk5rIIDO4HfcqNdQ" target="_blank">playlists</a>
-                    and <a href="https://soundcloud.com/ANAMOV" target="_blank">mixes</a>.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="scroll-contact" class="container contact-container">
-   
-            <div class="column contact"><h2>Contact</h2></div>
-            <div class="column footer">
-                <p>analiebert.ny@gmail.com</p>
-                <div class="footer-icons">
-                    <a href="mailto: analiebert.ny@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/analiebert/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/ana-liebert" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-
-            </div>
-
     </div>
 
 
@@ -389,29 +461,32 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-        <script>
+    <script>
 
         document.addEventListener("DOMContentLoaded", function () {
             // Get the project containers and the next button
             const projectContainers = document.querySelectorAll(".project-parent-container > .container");
             const nextButton = document.getElementById("nextBtn");
-          
+
             let currentProjectIndex = 0;
-          
+
             // Function to show the next project
             function showNextProject() {
-              projectContainers[currentProjectIndex].style.display = "none";
-              currentProjectIndex = (currentProjectIndex + 1) % projectContainers.length;
-              projectContainers[currentProjectIndex].style.display = "block";
+                projectContainers[currentProjectIndex].style.display = "none";
+                currentProjectIndex = (currentProjectIndex + 1) % projectContainers.length;
+                projectContainers[currentProjectIndex].style.display = "block";
             }
-          
+
             // Add a click event listener to the next button
             nextButton.addEventListener("click", showNextProject);
-          
+
             // Initially, display the first project
             projectContainers[0].style.display = "block";
-          });
-        </script>
+        });
+
+
+
+    </script>
 
 
 </html>
