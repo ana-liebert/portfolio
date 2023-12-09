@@ -39,3 +39,22 @@ window.onload=function(){
         
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 0;
+    const projects = document.querySelectorAll(".project-parent-container > .container");
+
+    document.getElementById("nextBtn").addEventListener("click", function () {
+        showProject(currentIndex + 1);
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", function () {
+        showProject(currentIndex - 1);
+    });
+
+    function showProject(index) {
+        projects[currentIndex].style.display = "none";
+        currentIndex = (index + projects.length) % projects.length;
+        projects[currentIndex].style.display = "block";
+    }
+});

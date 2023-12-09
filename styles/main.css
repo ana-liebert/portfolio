@@ -137,7 +137,7 @@ body {
   }
 
   .body-img {
- width: 120%;
+ width: 105%;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -616,19 +616,27 @@ p, li, ul, .flex p {
     padding: 0 5%;
 }
 
-  i#nextBtn {
+  #nextBtn {
     cursor: pointer;
     position: absolute;
     right: 0% !important;
     z-index: 100;
     bottom: 30% !important;
-    font-size: 30px !important;
     top: unset !important;
+}
+
+#prevBtn {
+  cursor: pointer;
+  position: absolute;
+  left: 0% !important;
+  z-index: 100;
+  bottom: 30% !important;
+  top: unset !important;
 }
 
   .project-parent-container {
     padding: 0 !important;
-    margin: 10px 3% !important;
+    margin: 10px 5% !important;
     width: 100%;
   }
 
@@ -740,8 +748,8 @@ p, li, ul, .flex p {
 }
 .body-text {
   height: 100%;
-  width: 100%;
-  /* padding: 10px 3%; */
+  width: 95%;
+  padding: 10px 0%;
 }
 .icons {
 margin: 0;
@@ -753,7 +761,7 @@ font-size: 25px;
 }
 
 #project1, #project2, #project3, #project4 {
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .body-img {
@@ -879,7 +887,19 @@ i#nextBtn {
   margin-top: 7%;
 }
 
+#nextBtn {
+  bottom: 20% !important;
+}
 
+#prevBtn {
+bottom: 20% !important;
+}
+
+nav.navbar.fixed-top.navbar-expand-lg .inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 }
 
@@ -894,9 +914,6 @@ i#nextBtn {
 }
 #f, #u, #l, #l2, #s, #t, #a, #c, #k, #d, #e, #v, #e2, #l3, #o, #p, #e3, #r {
   font-size: 90px !important;
-}
-.navbar {
-  flex-wrap: wrap !important;
 }
   
 }
@@ -952,22 +969,37 @@ i#nextBtn {
   padding: 0;
 }
 
-i#nextBtn {
+#nextBtn svg{
   cursor: pointer;
   position: absolute;
   right: 0%;
   z-index: 100;
   top: 28%;
   font-size: 26px;
-  background: rgb(158, 185, 173);
-  border-radius: 50%;
   padding: 4px;
-  color: black;
-  border: solid #808080b3;
+  width: 35px;
+  height: 35px;
+
 }
 
-i#nextBtn:hover {
-color: #A9FFF7;
+#nextBtn svg, #prevBtn svg {
+  fill: rgb(158, 185, 173);
+}
+
+#prevBtn svg{
+  cursor: pointer;
+  position: absolute;
+  left: -7%;
+  z-index: 100;
+  top: 28%;
+  font-size: 26px;
+  padding: 4px;
+  width: 35px;
+  height: 35px;
+}
+
+#nextBtn:hover svg, #nextBtn:hover svg{
+fill: #A9FFF7;
 }
 
 @media (min-width: 720px) {
@@ -1021,4 +1053,32 @@ color: #A9FFF7;
 
 .col-lg-8.col-sm-12.js-scroll {
   padding: 0 !important;
+}
+
+
+div#project1 {
+  display: block;
+}
+
+#prevBtn {
+  left: -47px;
+  right: unset;
+}
+
+
+
+nav.navbar.fixed-top.navbar-expand-lg .inner {
+  display: flex;
+  align-items: center;
+}
+
+svg#Capa_1 {
+  width: 20px;
+  height: 20px;
+  fill: #B8E1FF;
+  margin-bottom: 7px;
+}
+
+a:hover svg#Capa_1 {
+  fill: #A9FFF7;
 }
