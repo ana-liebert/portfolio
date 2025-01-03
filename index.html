@@ -10,8 +10,6 @@
     <meta name="description" content="Portfolio of Ana Liebert's Software Engineering work.">
     <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
     <link rel="icon" href="favicon.ico?" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,563 +23,1042 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="styles/main.css?v=1.2" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/timothydesign/script/split-type.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="scripts/scripts.js"></script>
+
 
 
 </head>
 
+
+
 <body>
 
+    <div class="outer-wrapper">
+        <div class="wrapper">
 
-    <h1 style="display: hidden">Ana Liebert</h1>
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="inner">
-            <div class="container-fluid d-flex justify-content-start">
-                Brooklyn, NY
+            <div class="nav">
+                <p>Ana Liebert</p>
+
+                <p>Brooklyn, NY</p>
             </div>
-            <div class="container-fluid d-flex justify-content-end">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scroll-contact">GET IN TOUCH</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </header>
 
 
-    <div class="main-content">
-        <div class="inner">
-            <div class="container page-container">
-                <div class="row intro">
-                    <div class="col-lg-8 col-sm-12 js-scroll">
-                        <h2 class="header desktop-head">
-                            <span id="f">F</span>
-                            <span id="u">u</span>
-                            <span id="l">l</span>
-                            <span id="l2">l</span>
-                            <span> </span>
-                            <span id="s">S</span>
-                            <span id="t">t</span>
-                            <span id="a">a</span>
-                            <span id="c">c</span>
-                            <span id="k">k</span>
-                            <br>
-                            <span id="d">D</span>
-                            <span id="e">e</span>
-                            <span id="v">v</span>
-                            <span id="e2">e</span>
-                            <span id="l3">l</span>
-                            <span id="o">o</span>
-                            <span id="p">p</span>
-                            <span id="e3">e</span>
-                            <span id="r">r</span>
-                        </h2>
-                        <h2 class="header mobile-head">
-                            <span id="f">F</span>
-                            <span id="u">u</span>
-                            <span id="l">l</span>
-                            <span id="l2">l</span>
-                            <span> </span><br>
-                            <span id="s">S</span>
-                            <span id="t">t</span>
-                            <span id="a">a</span>
-                            <span id="c">c</span>
-                            <span id="k">k</span>
-                            <br>
-                            <span id="d">D</span>
-                            <span id="e">e</span>
-                            <span id="v">v</span>
-                            <span id="e2">e</span>
-                            <span id="l3">l</span>
-                            <span id="l3">-</span>
-                            <br>
-                            <span id="o">o</span>
-                            <span id="p">p</span>
-                            <span id="e3">e</span>
-                            <span id="r">r</span>
-                        </h2>
-
+            <div class="hero">
+                <div class="hero-text">
+                    <div class="hero-about">
+                        <h2 class="left-about fade-in-from-bottom">Portfolio</h2>
+                        <h2 class="right-about fade-in-from-bottom">Hi, I'm Ana. I'm a freelance developer based in
+                            Brooklyn, NY. I create responsive, optimized, and efficient
+                            websites with a focus on visual design and user experience. I'm always working towards
+                            learning more.</h2>
+                        <div class="scroll fade-in-from-bottom">
+                            <a href="#work-section">View my work</a> <svg class="down-arrows"
+                                xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                                viewBox="0 0 1200 1200">
+                                <path
+                                    d="m930.17 322.26c-2.4805 0.11719-4.8633 1.0117-6.8047 2.5586l-323.38 260.1-323.38-260.1c-2.4297-1.9492-5.5312-2.8633-8.625-2.5391-3.1211 0.34375-5.9766 1.9102-7.9336 4.3594-4.0547 5.082-3.2422 12.48 1.8203 16.559l330.72 266.03c4.3203 3.4805 10.48 3.4805 14.805 0l330.81-266.03c5.0312-4.1055 5.8047-11.5 1.7305-16.559-2.3672-2.9336-5.9922-4.5625-9.7539-4.3828zm0 266.03v-0.003906c-2.4805 0.11719-4.8633 1.0156-6.8047 2.5625l-323.38 260-323.38-260c-2.4297-1.9531-5.5312-2.8633-8.625-2.5391-3.1211 0.34375-5.9766 1.9102-7.9336 4.3594-4.0547 5.082-3.2422 12.48 1.8203 16.559l330.72 265.96c4.3203 3.4805 10.48 3.4805 14.805 0l330.81-265.96c5.0312-4.1055 5.8047-11.504 1.7305-16.559-2.3672-2.9336-5.9922-4.5625-9.7539-4.3828z" />
+                            </svg>
+                        </div>
                     </div>
-
-                    <div class="col bio">
-                        <p class="p-bio">Hello World, I'm Ana. I'm a developer with a deep appreciation for design and
-                            user
-                            experience.
-                            I'm passionate about creating responsive, optimized, and efficient websites, while always
-                            working towards learning more.
-                        </p>
+                    <div class="headline">
+                        <h1 words-slide-up="" text-split="" class="main-hero_heading">Web</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                            viewBox="0 0 1200 1200">
+                            <path
+                                d="m954.24 600c0 195.64-158.6 354.24-354.24 354.24-195.64 0-354.24-158.6-354.24-354.24 0-195.64 158.6-354.24 354.24-354.24 195.64 0 354.24 158.6 354.24 354.24"
+                                fill-rule="evenodd" />
+                        </svg>
+                        <h1 words-slide-up="" text-split="" class="main-hero_heading">Developer</h1>
                     </div>
                 </div>
             </div>
 
-            <h2 class="experience-header">Engineering Experience</h2>
-            <div class="about-work">
-                <div class="left">
-                    <h2 class="freelance selected">Freelance</h2>
-                    <h2 class="blueprint">Blueprint Interactive</h2>
-                    <h2 class="ga">General Assembly</h2>
+
+
+            <div class="skills-section fade-in-from-bottom">
+                <h3 class="h3-header">Expertise</h3>
+
+                <div class="skill-cards">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <p class="number">01</p>
+                            <p>Languages Frameworks Libraries</p>
+                        </div>
+                        <div class="skill-text">
+                            <p>Webflow, WordPress, React, JavaScript, PHP, HTML5, CSS3, GSAP, jQuery, Bootstrap </p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <p class="number">02</p>
+                            <p>Tools</p>
+                        </div>
+                        <div class="skill-text">
+                            <p>GitHub, AWS, Plesk, Sequel Pro, Heroku, Postman, Google Analytics & Search Console</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <p class="number">03</p>
+                            <p>Design</p>
+                        </div>
+                        <div class="skill-text">
+                            <p>Figma, Sketch, Adobe Photoshop, Webflow, LottieFiles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="experience-section fade-in-from-bottom">
+                <h3 class="h3-header">Experience</h3>
+
+                <div class="experience-container">
+                    <div class="jobs">
+                        <div class="job">
+                            <p class="year">23</p>
+                            <div class="title">
+                                <p>Developer</p>
+                                <p>Freelance (present) </p>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="year">22</p>
+                            <div class="title">
+                                <p>Associate Developer</p>
+                                <p>Blueprint Interactive</p>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="year">19</p>
+                            <div class="title">
+                                <p>Senior Account Manager</p>
+                                <p>Dentsu International</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="education">
+                        <div class="school">
+                            <p class="year">19</p>
+                            <div class="title">
+                                <p>Software Engineering Immersive</p>
+                                <p>General Assembly</p>
+                            </div>
+                        </div>
+                        <div class="school">
+                            <p class="year">16</p>
+                            <div class="title">
+                                <p>BA Digital Marketing</p>
+                                <p>Baruch College</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+            </div>
+
+
+
+
+
+            <div class="work-section" id="work-section">
+                <div class="left work-title">
+                    <h3 class="h3-header">Work</h3>
+                </div>
+
                 <div class="right">
-                    <div class="freelance-desc">
-                        <h3>Web Developer @ Self Employed</h3>
-                        <ul>
-                            <!-- <li>Develop, design, update, and fix bugs for various clients but primarily Scient Public Relations, utilizing HTML5, CSS3, JavaScript/jQuery, WordPress, PHP, Sequel Pro/MySQL, and Webflow– implementing responsive design, custom animations, and SEO best practices</li> -->
-                            <li>Develop, design, update, and fix bugs for various clients, utilizing HTML5, CSS3, JavaScript/jQuery, WordPress, PHP, Sequel Pro/MySQL, and Webflow– implementing responsive design, custom animations, and SEO best practices</li>
-                        </ul>
+                    <div class="work">
+                        <div class="work-cards">
+
+                            <a href="https://www.diagonaltx.com/" target="_blank" class="work-card shrink-effect">
+                                <div class="work-header">
+                                    <p>DiagonalTx</p>
+                                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                        height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                        <defs>
+                                            <clipPath id="b">
+                                                <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                            </clipPath>
+                                            <clipPath id="a">
+                                                <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                            </clipPath>
+                                        </defs>
+                                        <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                            fill-rule="evenodd" />
+                                        <g clip-path="url(#b)">
+                                            <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                        </g>
+                                        <g clip-path="url(#a)">
+                                            <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="dev-button">Featured</div>
+                            </a>
+
+                            <a href="https://americavotes.org/" target="_blank"
+                                class="work-card am-votes shrink-effect">
+                                <div class="work-header">
+                                    <p>America Votes</p> <svg class="external-link" xmlns="http://www.w3.org/2000/svg"
+                                        width="1200pt" height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                        <defs>
+                                            <clipPath id="b">
+                                                <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                            </clipPath>
+                                            <clipPath id="a">
+                                                <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                            </clipPath>
+                                        </defs>
+                                        <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                            fill-rule="evenodd" />
+                                        <g clip-path="url(#b)">
+                                            <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                        </g>
+                                        <g clip-path="url(#a)">
+                                            <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="dev-button">Featured</div>
+                            </a>
+
+
+                            <a href="https://spreadaapilove.org/" target="_blank" class="work-card sah shrink-effect">
+                                <div class="work-header">
+                                    <p>Spread AAPI Love</p> <svg class="external-link"
+                                        xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                                        viewBox="0 0 1200 1200">
+                                        <defs>
+                                            <clipPath id="b">
+                                                <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                            </clipPath>
+                                            <clipPath id="a">
+                                                <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                            </clipPath>
+                                        </defs>
+                                        <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                            fill-rule="evenodd" />
+                                        <g clip-path="url(#b)">
+                                            <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                        </g>
+                                        <g clip-path="url(#a)">
+                                            <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="dev-button">Featured</div>
+                            </a>
+
+
+                            <a href="https://www.kynexistx.com/" target="_blank" class="work-card scient shrink-effect">
+                                <div class="work-header">
+                                    <p>Kynexis</p> <svg class="external-link" xmlns="http://www.w3.org/2000/svg"
+                                        width="1200pt" height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                        <defs>
+                                            <clipPath id="b">
+                                                <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                            </clipPath>
+                                            <clipPath id="a">
+                                                <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                            </clipPath>
+                                        </defs>
+                                        <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                            fill-rule="evenodd" />
+                                        <g clip-path="url(#b)">
+                                            <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                        </g>
+                                        <g clip-path="url(#a)">
+                                            <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="dev-button">Featured</div>
+                            </a>
+
+
+                        </div>
+
+                        <div class="additional-work-section fade-in-from-bottom">
+
+                            <div class="site-listing border-animation">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://www.glycoera.com/">GlycoEra</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="site-listing border-animation">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://fundforthefund.org/">Fund for the Global Fund</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="site-listing border-animation">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://ballot.org/">Ballot Initiative Strategy Center</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="site-listing border-animation">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://www.precede.bio/">Precede Biosciences</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://dccc.org/together-aapi/">DCCC: In it Together</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://larkspur.bio/">Larkspur Bio</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://maggiefornh.com/">Maggie for NH</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://noplaceforhateca.org/">No Place for Hate</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://stoptheblame.org/">Stop the Blame</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://schoolhouseballot.com/">School House Ballot</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://www.jnanatx.com/">Jnanatx</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+
+                            </div>
+
+
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://voicesforsoilhealth.org/">Voices for Soil Health</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://defendandadvance.org/">Defend and Advance</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="site-listing">
+                                <p class="client">Client</p>
+                                <a target="_blank" href="https://defendourvets.com/">Defend our Vets</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="site-listing personal">
+                                <p class="client">Personal Project</p>
+                                <a target="_blank" href="https://alieb-mixtape.netlify.app/">Mixtape</a>
+                                <svg class="external-link dark" xmlns="http://www.w3.org/2000/svg" width="1200pt"
+                                    height="1200pt" version="1.1" viewBox="0 0 1200 1200">
+                                    <defs>
+                                        <clipPath id="b">
+                                            <path d="m883 222.14h94.859v708.86h-94.859z" />
+                                        </clipPath>
+                                        <clipPath id="a">
+                                            <path d="m269 222.14h708.86v94.855h-708.86z" />
+                                        </clipPath>
+                                    </defs>
+                                    <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z"
+                                        fill-rule="evenodd" />
+                                    <g clip-path="url(#b)">
+                                        <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                                    </g>
+                                    <g clip-path="url(#a)">
+                                        <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </div>
+
+
+                        </div>
                     </div>
-                    <div class="blueprint-desc hide">
-                        <h3>Associate Developer @ <a target="_blank" href="https://blueprintinteractive.com/">Blueprint
-                                Interactive</a></h3>
-                        <ul>
-                            <li>Own development and deployment of innovative and engaging websites and web apps that align with client goals, in addition to building internal tools to excel company productivity – leveraging WordPress, PHP, JavaScript, jQuery, Sequel Pro/MySQL, Webflow, React, 3rd party APIs, custom themes and plugins– utilizing AWS and Plesk for DNS and hosting services</li>
-                            <li>Collaborate with 3 developers, 3 UX/UI designers, and marketing teams in a remote-first environment to develop, enhance, maintain, debug, pair-program, and test websites and web apps, implementing scalability and producing pixel-perfect UI’s optimized for speed and performance</li>
-                            <li>Participate in sprint planning, creative brainstorms, and client calls to report on work estimation, status, provide design ideas and feedback, present development work, and train clients on content management </li>
-                        </ul>
-                    </div>
-                    <div class="ga-desc hide">
-                        <h3>Fellow @ <a target="_blank" href="https://generalassemb.ly/">General Assembly</a></h3>
-                        <ul>
-                            <li>Participated in a 12 week, full-time (60+ hrs/wk) immersive course on software
-                                engineering and web development concepts, practical use-cases, Git flow, and industry
-                                best practices</li>
-                            <li>Completed coursework and personal projects inclusive of multiple fullstack applications
-                                with full CRUD functionality, leveraging technologies including HTML5, CSS3, JavaScript,
-                                jQuery, Node.js/Express, MongoDB, Python3/Django, ReactJS, PostgreSQL, and more</li>
-                        </ul>
-                    </div>
+
+
+
+
                 </div>
             </div>
 
-            <h2 class="experience-header">Skills</h2>
-            <div class="about-work">
-                <div class="skills-left">
-                    <div class="flex">
-                        <h2>Languages</h2>
-                        <p>JavaScript, HTML5, CSS3, PHP, Python</p>
-                    </div>
-                    <div class="flex">
-                        <h2>Frameworks</h2>
-                        <p>React, jQuery, Django, Bootstrap</p>
-                    </div>
-                    <div class="flex">
-                        <h2>Databases</h2>
-                        <p>MySQL, PostgreSQL</p>
-                    </div>
-                    <div class="flex">
-                        <h2>Systems & Tools</h2>
-                        <p>GitHub, AWS, Plesk, Sequel Pro, Heroku, Postman, Google Analytics & Search Console</p>
-                    </div>
-                    <div class="flex">
-                        <h2>CMS</h2>
-                        <p>WordPress, Webflow</p>
-                    </div>
-                    <div class="flex">
-                        <h2>Design</h2>
-                        <p>Figma, Sketch, Adobe Photoshop, Webflow, LottieFiles</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <h2 class="experience-header">Some websites I've built</h2>
-            <div class="about-work">
-                <div class="skills-left sites">
-                    <div class="flex">
-                        <a target="_blank" href="https://americavotes.org/">americavotes.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="   https://spreadaapilove.org/">spreadaapilove.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://fundforthefund.org/">fundforthefund.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://dccc.org/together-aapi/">dccc.org/together-aapi</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <!-- <div class="flex">
-                        <a target="_blank" href="https://larkspur.bio/">larkspur.bio</a>
-                        <p>Freelance</p>
-                    </div> -->
-                    
-                    <div class="flex">
-                        <a target="_blank" href="https://maggiefornh.com/">maggiefornh.com</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://schoolhouseballot.com/">schoolhouseballot.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://stoptheblame.org/">stoptheblame.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://noplaceforhateca.org/">noplaceforhateca.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <!-- <div class="flex">
-                        <a target="_blank" href="https://www.jnanatx.com/">jnanatx.com</a>
-                        <p>Freelance</p>
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://www.profoundtx.com/">profoundtx.com</a>
-                        <p>Freelance</p>
-                    </div> -->
-                    <div class="flex">
-                        <a target="_blank" href=" https://conserveblakeplateau.org/">conserveblakeplateau.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://voicesforsoilhealth.org/">voicesforsoilhealth.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://defendandadvance.org/">defendandadvance.org</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-                    <div class="flex">
-                        <a target="_blank" href="https://defendourvets.com/">defendourvets.com</a>
-                        <!-- <p>Blueprint Interactive</p> -->
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECTS -->
-            <h2 class="experience-header2">
-                PROJECTS
-            </h2>
 
 
 
-            <div class="project-parent-container">
-                <!-- <i id="nextBtn" class="fa-solid fa-arrow-right"></i>
-                <i id="prevBtn" class="fa-solid fa-arrow-left"></i> -->
-                <p id="prevBtn">
-                    <?xml version="1.0" ?><svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
-                        <title />
-                        <path
-                            d="M39.3756,48.0022l30.47-25.39a6.0035,6.0035,0,0,0-7.6878-9.223L26.1563,43.3906a6.0092,6.0092,0,0,0,0,9.2231L62.1578,82.615a6.0035,6.0035,0,0,0,7.6878-9.2231Z" />
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="spacer"></div>
+        <div class="footer-wrap">
+            <div class="banner">
+
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
                     </svg>
-                </p>
-                <p id="nextBtn">
-                    <?xml version="1.0" ?><svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
-                        <title />
-                        <path
-                            d="M69.8437,43.3876,33.8422,13.3863a6.0035,6.0035,0,0,0-7.6878,9.223l30.47,25.39-30.47,25.39a6.0035,6.0035,0,0,0,7.6878,9.2231L69.8437,52.6106a6.0091,6.0091,0,0,0,0-9.223Z" />
+                    <p>Open for work</p>
+                </div>
+
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
                     </svg>
-                </p>
-
-                <div class="container body-container" id="project1">
-                    <div class="row body-row">
-                        <div class="col">
-                            <div class="body-text">
-                                <div class="code-link">
-                                    <h1 class="body-header" id="project1-header">Mixtape</h1>
-
-                                    <a target="_blank" href="https://alieb-mixtape.netlify.app/" target="_blank">Check
-                                        it out
-                                        <span><svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
-                                                xml:space="preserve">
-                                                <g>
-                                                    <path d="M294.077,251.199l-59.105-59.107l42.167-24.356c3.295-1.903,5.212-5.52,4.938-9.315c-0.274-3.796-2.692-7.101-6.226-8.51
-                                               L87.82,74.905c-3.686-1.472-7.895-0.605-10.702,2.201c-2.807,2.808-3.674,7.016-2.203,10.702l74.994,188.053
-                                               c1.41,3.534,4.715,5.953,8.511,6.227c3.796,0.276,7.414-1.642,9.316-4.938l24.354-42.167l59.101,59.107
-                                               c1.862,1.863,4.39,2.91,7.023,2.91c2.635,0,5.161-1.047,7.023-2.91l28.841-28.845C297.956,261.366,297.956,255.078,294.077,251.199
-                                               z" />
-                                                    <path
-                                                        d="M43.61,29.552c-3.879-3.876-10.166-3.877-14.047,0c-3.878,3.879-3.878,10.168,0,14.047l22.069,22.069
-                                               c1.939,1.939,4.48,2.909,7.023,2.909c2.541,0,5.083-0.97,7.022-2.909c3.879-3.879,3.879-10.167,0-14.046L43.61,29.552z" />
-                                                    <path d="M51.089,98.215c0-5.484-4.447-9.932-9.933-9.932H9.946c-5.485,0-9.933,4.447-9.933,9.932c0,5.485,4.447,9.933,9.933,9.933
-                                               h31.21C46.642,108.147,51.089,103.7,51.089,98.215z" />
-                                                    <path
-                                                        d="M47.063,128.869l-22.072,22.071c-3.878,3.879-3.878,10.168,0,14.046c1.94,1.939,4.482,2.909,7.023,2.909
-                                               c2.541,0,5.084-0.97,7.023-2.909l22.071-22.07c3.879-3.879,3.879-10.168,0-14.047C57.23,124.993,50.944,124.992,47.063,128.869z" />
-                                                    <path d="M98.222,51.078c5.485,0,9.933-4.447,9.933-9.933V9.932c0-5.485-4.447-9.932-9.933-9.932c-5.484,0-9.932,4.446-9.932,9.932
-                                               v31.214C88.29,46.631,92.737,51.078,98.222,51.078z" />
-                                                    <path d="M135.894,64.006c2.543,0,5.084-0.97,7.023-2.909l22.068-22.069c3.879-3.879,3.879-10.168,0-14.047
-                                               c-3.879-3.877-10.168-3.877-14.046,0l-22.068,22.07c-3.879,3.879-3.879,10.168,0,14.046
-                                               C130.811,63.036,133.352,64.006,135.894,64.006z" />
-                                                </g>
-                                            </svg></span></a>
-                                </div>
-                                <div class="body-info">
-                                    <p>Main technologies: React, Python, Django, PostgreSQL</p>
-                                    <p>Browse and listen to curated 1hr mixes from Mixtape hosts. Signup and post,
-                                        upate, or
-                                        delete your own mix.</p>
-                                </div>
-
-                                <div class="icons">
-                                    <i class="devicon-react-original"></i>
-                                    <i class="devicon-django-plain"></i>
-                                    <i class="devicon-python-plain"></i>
-                                    <i class="devicon-postgresql-plain"></i>
-                                    <i class="devicon-javascript-plain"></i>
-                                    <i class="devicon-html5-plain"></i>
-                                    <i class="devicon-css3-plain"></i>
-                                    <i class="devicon-bootstrap-plain"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="scroll-work" class="col">
-                            <a target="_blank" href="https://alieb-mixtape.netlify.app/" target="_blank">
-                                <img class="body-img hidden" src="images/mixtapemock.jpg">
-                            </a>
-                        </div>
-
-                    </div>
+                    <p>Open for work</p>
                 </div>
 
-                <div class="container body-container" id="project2">
-                    <div class="row body-row">
-                        <div class="col">
-                            <div class="body-text">
-                                <div class="code-link">
-                                    <h1 class="body-header" id="project2-header">Travelr</h1>
-
-                                    <a target="_blank" href="https://app-travelr.herokuapp.com/" target="_blank">Check
-                                        it out
-                                        <span><svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
-                                                xml:space="preserve">
-                                                <g>
-                                                    <path d="M294.077,251.199l-59.105-59.107l42.167-24.356c3.295-1.903,5.212-5.52,4.938-9.315c-0.274-3.796-2.692-7.101-6.226-8.51
-                                               L87.82,74.905c-3.686-1.472-7.895-0.605-10.702,2.201c-2.807,2.808-3.674,7.016-2.203,10.702l74.994,188.053
-                                               c1.41,3.534,4.715,5.953,8.511,6.227c3.796,0.276,7.414-1.642,9.316-4.938l24.354-42.167l59.101,59.107
-                                               c1.862,1.863,4.39,2.91,7.023,2.91c2.635,0,5.161-1.047,7.023-2.91l28.841-28.845C297.956,261.366,297.956,255.078,294.077,251.199
-                                               z" />
-                                                    <path
-                                                        d="M43.61,29.552c-3.879-3.876-10.166-3.877-14.047,0c-3.878,3.879-3.878,10.168,0,14.047l22.069,22.069
-                                               c1.939,1.939,4.48,2.909,7.023,2.909c2.541,0,5.083-0.97,7.022-2.909c3.879-3.879,3.879-10.167,0-14.046L43.61,29.552z" />
-                                                    <path d="M51.089,98.215c0-5.484-4.447-9.932-9.933-9.932H9.946c-5.485,0-9.933,4.447-9.933,9.932c0,5.485,4.447,9.933,9.933,9.933
-                                               h31.21C46.642,108.147,51.089,103.7,51.089,98.215z" />
-                                                    <path
-                                                        d="M47.063,128.869l-22.072,22.071c-3.878,3.879-3.878,10.168,0,14.046c1.94,1.939,4.482,2.909,7.023,2.909
-                                               c2.541,0,5.084-0.97,7.023-2.909l22.071-22.07c3.879-3.879,3.879-10.168,0-14.047C57.23,124.993,50.944,124.992,47.063,128.869z" />
-                                                    <path d="M98.222,51.078c5.485,0,9.933-4.447,9.933-9.933V9.932c0-5.485-4.447-9.932-9.933-9.932c-5.484,0-9.932,4.446-9.932,9.932
-                                               v31.214C88.29,46.631,92.737,51.078,98.222,51.078z" />
-                                                    <path d="M135.894,64.006c2.543,0,5.084-0.97,7.023-2.909l22.068-22.069c3.879-3.879,3.879-10.168,0-14.047
-                                               c-3.879-3.877-10.168-3.877-14.046,0l-22.068,22.07c-3.879,3.879-3.879,10.168,0,14.046
-                                               C130.811,63.036,133.352,64.006,135.894,64.006z" />
-                                                </g>
-                                            </svg></span></a>
-                                </div>
-                                <div class="body-info">
-                                    <p>Main technologies: Python, Django, PostgreSQL</p>
-                                    <p>Browse, and contribute to Travelr guides for cities around the world.</p>
-                                </div>
-
-                                <div class="icons">
-                                    <i class="devicon-django-plain"></i>
-                                    <i class="devicon-python-plain"></i>
-                                    <i class="devicon-postgresql-plain"></i>
-                                    <i class="devicon-html5-plain"></i>
-                                    <i class="devicon-css3-plain"></i>
-                                    <i class="devicon-bootstrap-plain"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <a target="_blank" href="https://app-travelr.herokuapp.com/" target="_blank">
-                                <img class="body-img" alt="Mixtape Application created by Ana Liebert"
-                                    src="images/travlrmock.jpg">
-                            </a>
-                        </div>
-
-                        <div>
-                        </div>
-                    </div>
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
                 </div>
 
-                <div class="container body-container" id="project3">
-                    <div class="row body-row">
-                        <div class="col">
-                            <div class="body-text">
-                                <div class="code-link">
-                                    <h1 class="body-header" id="project3-header">The Open Source Kitchen</h1>
-
-                                    <a target="_blank" href="https://opensourcekitchen.herokuapp.com/recipeblog/home"
-                                        target="_blank">Check it out
-                                        <span><svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
-                                                xml:space="preserve">
-                                                <g>
-                                                    <path d="M294.077,251.199l-59.105-59.107l42.167-24.356c3.295-1.903,5.212-5.52,4.938-9.315c-0.274-3.796-2.692-7.101-6.226-8.51
-                                               L87.82,74.905c-3.686-1.472-7.895-0.605-10.702,2.201c-2.807,2.808-3.674,7.016-2.203,10.702l74.994,188.053
-                                               c1.41,3.534,4.715,5.953,8.511,6.227c3.796,0.276,7.414-1.642,9.316-4.938l24.354-42.167l59.101,59.107
-                                               c1.862,1.863,4.39,2.91,7.023,2.91c2.635,0,5.161-1.047,7.023-2.91l28.841-28.845C297.956,261.366,297.956,255.078,294.077,251.199
-                                               z" />
-                                                    <path
-                                                        d="M43.61,29.552c-3.879-3.876-10.166-3.877-14.047,0c-3.878,3.879-3.878,10.168,0,14.047l22.069,22.069
-                                               c1.939,1.939,4.48,2.909,7.023,2.909c2.541,0,5.083-0.97,7.022-2.909c3.879-3.879,3.879-10.167,0-14.046L43.61,29.552z" />
-                                                    <path d="M51.089,98.215c0-5.484-4.447-9.932-9.933-9.932H9.946c-5.485,0-9.933,4.447-9.933,9.932c0,5.485,4.447,9.933,9.933,9.933
-                                               h31.21C46.642,108.147,51.089,103.7,51.089,98.215z" />
-                                                    <path
-                                                        d="M47.063,128.869l-22.072,22.071c-3.878,3.879-3.878,10.168,0,14.046c1.94,1.939,4.482,2.909,7.023,2.909
-                                               c2.541,0,5.084-0.97,7.023-2.909l22.071-22.07c3.879-3.879,3.879-10.168,0-14.047C57.23,124.993,50.944,124.992,47.063,128.869z" />
-                                                    <path d="M98.222,51.078c5.485,0,9.933-4.447,9.933-9.933V9.932c0-5.485-4.447-9.932-9.933-9.932c-5.484,0-9.932,4.446-9.932,9.932
-                                               v31.214C88.29,46.631,92.737,51.078,98.222,51.078z" />
-                                                    <path d="M135.894,64.006c2.543,0,5.084-0.97,7.023-2.909l22.068-22.069c3.879-3.879,3.879-10.168,0-14.047
-                                               c-3.879-3.877-10.168-3.877-14.046,0l-22.068,22.07c-3.879,3.879-3.879,10.168,0,14.046
-                                               C130.811,63.036,133.352,64.006,135.894,64.006z" />
-                                                </g>
-                                            </svg></span></a>
-                                </div>
-                                <div class="body-info">
-                                    <p>Main technologies: Express, Node.js, MongoDB </p>
-                                    <p>Browse, post, and write reviews on this recipe blog.</p>
-                                </div>
-                                <div class="icons">
-                                    <i class="devicon-mongodb-plain"></i>
-                                    <i class="devicon-express-original"></i>
-                                    <i class="devicon-nodejs-plain"></i>
-                                    <i class="devicon-css3-plain"></i>
-                                    <i class="devicon-bulma-plain"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <a target="_blank" href="https://opensourcekitchen.herokuapp.com/recipeblog/home"
-                                target="_blank">
-                                <img class="body-img" alt="Cooking Blog created by Ana Liebert"
-                                    src="images/opensourcemock.jpg">
-                            </a>
-                        </div>
-
-                        <div>
-                        </div>
-                    </div>
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
                 </div>
 
-                <!-- <div class="container body-container" id="project4">
-                    <div class="row body-row">
-                        <div class="col">
-                            <div class="body-text">
-                                <div class="code-link">
-                                    <h1 class="body-header" id="project3-header">Memory Game</h1>
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
+                </div>
 
-                                    <a target="_blank"
-                                        href="https://pages.git.generalassemb.ly/analiebert/concentrationGame/"
-                                        target="_blank">Check it out
-                                        <span><svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297"
-                                                xml:space="preserve">
-                                                <g>
-                                                    <path d="M294.077,251.199l-59.105-59.107l42.167-24.356c3.295-1.903,5.212-5.52,4.938-9.315c-0.274-3.796-2.692-7.101-6.226-8.51
-                                           L87.82,74.905c-3.686-1.472-7.895-0.605-10.702,2.201c-2.807,2.808-3.674,7.016-2.203,10.702l74.994,188.053
-                                           c1.41,3.534,4.715,5.953,8.511,6.227c3.796,0.276,7.414-1.642,9.316-4.938l24.354-42.167l59.101,59.107
-                                           c1.862,1.863,4.39,2.91,7.023,2.91c2.635,0,5.161-1.047,7.023-2.91l28.841-28.845C297.956,261.366,297.956,255.078,294.077,251.199
-                                           z" />
-                                                    <path
-                                                        d="M43.61,29.552c-3.879-3.876-10.166-3.877-14.047,0c-3.878,3.879-3.878,10.168,0,14.047l22.069,22.069
-                                           c1.939,1.939,4.48,2.909,7.023,2.909c2.541,0,5.083-0.97,7.022-2.909c3.879-3.879,3.879-10.167,0-14.046L43.61,29.552z" />
-                                                    <path d="M51.089,98.215c0-5.484-4.447-9.932-9.933-9.932H9.946c-5.485,0-9.933,4.447-9.933,9.932c0,5.485,4.447,9.933,9.933,9.933
-                                           h31.21C46.642,108.147,51.089,103.7,51.089,98.215z" />
-                                                    <path
-                                                        d="M47.063,128.869l-22.072,22.071c-3.878,3.879-3.878,10.168,0,14.046c1.94,1.939,4.482,2.909,7.023,2.909
-                                           c2.541,0,5.084-0.97,7.023-2.909l22.071-22.07c3.879-3.879,3.879-10.168,0-14.047C57.23,124.993,50.944,124.992,47.063,128.869z" />
-                                                    <path d="M98.222,51.078c5.485,0,9.933-4.447,9.933-9.933V9.932c0-5.485-4.447-9.932-9.933-9.932c-5.484,0-9.932,4.446-9.932,9.932
-                                           v31.214C88.29,46.631,92.737,51.078,98.222,51.078z" />
-                                                    <path d="M135.894,64.006c2.543,0,5.084-0.97,7.023-2.909l22.068-22.069c3.879-3.879,3.879-10.168,0-14.047
-                                           c-3.879-3.877-10.168-3.877-14.046,0l-22.068,22.07c-3.879,3.879-3.879,10.168,0,14.046
-                                           C130.811,63.036,133.352,64.006,135.894,64.006z" />
-                                                </g>
-                                            </svg></span></a>
-                                </div>
-                                <div class="body-info">
-                                    <p>Main technologies: Javascript, jQuery, HTML, CSS </p>
-                                    <p>Test your memory by finding the matches in the deck. Keep playing to beat your
-                                        time.</p>
-                                </div>
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
+                </div>
 
-                                <div class="icons">
-                                    <i class="devicon-javascript-plain"></i>
-                                    <i class="devicon-jquery-plain"></i>
-                                    <i class="devicon-html5-plain"></i>
-                                    <i class="devicon-css3-plain"></i>
-                                </div>
-                            </div>
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
+                </div>
 
-                        </div>
-                        <div class="col">
-                            <a target="_blank" href="https://pages.git.generalassemb.ly/analiebert/concentrationGame/"
-                                target="_blank">
-                                <img class="body-img" alt="Memory game created by Ana Liebert"
-                                    src="images/concentrationmock.jpg">
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
+                </div>
+
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
+                </div>
+
+                <div class="content">
+                    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt" version="1.1"
+                        viewBox="0 0 1200 1200">
+                        <path d="m600 360c-132 0-240 108-240 240s108 240 240 240 240-108 240-240-108-240-240-240z"
+                            fill="#82ed68" />
+                    </svg>
+                    <p>Open for work</p>
+                </div>
+
+
 
             </div>
 
-            <!-- PROJECTS -->
-
-
-
-            <div class="container about-container">
-                <div class="row">
-                    <div class="col about-text">
-                        <p>When I'm not coding, you can catch me cooking, exploring new places, taking <a
-                                target="_blank" target="_blank"
-                                href="https://ana-liebert.github.io/photography/">photos</a>, or making <a
-                                href="https://open.spotify.com/playlist/0pIHgtIk5rIIDO4HfcqNdQ"
-                                target="_blank">playlists</a>
-                            and <a target="_blank" href="https://soundcloud.com/ANAMOV" target="_blank">mixes</a>.</p>
-                    </div>
-                </div>
+            <div class="social-links fade-in-from-bottom">
+                <a href="mailto:analiebert.ny@gmail.com">analiebert.ny@gmail.com
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt"
+                        version="1.1" viewBox="0 0 1200 1200">
+                        <defs>
+                            <clipPath id="b">
+                                <path d="m883 222.14h94.859v708.86h-94.859z" />
+                            </clipPath>
+                            <clipPath id="a">
+                                <path d="m269 222.14h708.86v94.855h-708.86z" />
+                            </clipPath>
+                        </defs>
+                        <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z" fill-rule="evenodd" />
+                        <g clip-path="url(#b)">
+                            <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                        </g>
+                        <g clip-path="url(#a)">
+                            <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/analiebert/" target="_blank">LinkedIn
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt"
+                        version="1.1" viewBox="0 0 1200 1200">
+                        <defs>
+                            <clipPath id="b">
+                                <path d="m883 222.14h94.859v708.86h-94.859z" />
+                            </clipPath>
+                            <clipPath id="a">
+                                <path d="m269 222.14h708.86v94.855h-708.86z" />
+                            </clipPath>
+                        </defs>
+                        <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z" fill-rule="evenodd" />
+                        <g clip-path="url(#b)">
+                            <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                        </g>
+                        <g clip-path="url(#a)">
+                            <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://github.com/ana-liebert" target="_blank">GitHub
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="1200pt" height="1200pt"
+                        version="1.1" viewBox="0 0 1200 1200">
+                        <defs>
+                            <clipPath id="b">
+                                <path d="m883 222.14h94.859v708.86h-94.859z" />
+                            </clipPath>
+                            <clipPath id="a">
+                                <path d="m269 222.14h708.86v94.855h-708.86z" />
+                            </clipPath>
+                        </defs>
+                        <path d="m306.34 960.46-66.797-66.797 667.96-667.96 66.797 66.797z" fill-rule="evenodd" />
+                        <g clip-path="url(#b)">
+                            <path d="m883.39 930.62v-708.48h94.465v708.48z" fill-rule="evenodd" />
+                        </g>
+                        <g clip-path="url(#a)">
+                            <path d="m269.38 316.61v-94.465h708.48v94.465z" fill-rule="evenodd" />
+                        </g>
+                    </svg>
+                </a>
             </div>
 
-            <div id="scroll-contact" class="container contact-container">
-
-                <div class="column contact">
-                    <h2>Contact</h2>
-                </div>
-                <div class="column footer">
-                    <p>analiebert.ny@gmail.com</p>
-                    <div class="footer-icons">
-                        <a target="_blank" href="mailto: analiebert.ny@gmail.com"><i
-                                class="fa-solid fa-envelope"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/analiebert/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="https://github.com/ana-liebert" target="_blank"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
-
-                </div>
+            <div class="footer-inner">
+                <a stagger-link href="mailto:analiebert.ny@gmail.com" class="stagger-link"><span
+                        stagger-link-text="orange">Get in touch.</span></a>
 
             </div>
         </div>
     </div>
 
 
-    <div id="parent">
-        <h2 class="child"> Reach out. Get in touch. Let's connect. </h2>
-    </div>
+    <script>
 
-    </div>
+        jQuery(document).ready(function () {
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+            jQuery('.fade-in-from-bottom').waypoint(function (direction) {
+                if (direction === 'down') {
+                    jQuery(this.element).addClass('active');
+                }
+                else {
+                    this.element.classList.remove('active');  // Removes it if the element is out of view
+                }
+            }, {
+                offset: '70%' // Adjust this value as needed
+            });
 
 
-</html>
+
+
+
+            jQuery('.shrink-effect').waypoint(function (direction) {
+                if (direction === 'down') {
+                    jQuery(this.element).addClass('is-visible');
+                }
+            }, {
+                offset: '75%' // Adjust this value as needed
+            });
+
+
+        });
+
+
+        console.clear();
+
+        gsap.set('.banner', { xPercent: -50, yPercent: -50 })
+
+
+        var boxWidth = 203,
+            totalWidth = boxWidth * 10  // * n of boxes + diff textBox
+        time = 30,
+            no01 = document.querySelectorAll(".content"),
+            dirFromLeft = "+=" + totalWidth,
+            dirFromRight = "-=" + totalWidth;
+
+        var mod = gsap.utils.wrap(0, totalWidth);
+
+        gsap.set(no01, {
+            x: function (i) {
+                return i * boxWidth;
+            }
+        });
+
+        var action = gsap.timeline()
+            .to(no01, {
+                x: dirFromLeft,
+                modifiers: {
+                    x: x => mod(parseFloat(x)) + "px"
+                },
+                duration: time, ease: 'linear',
+                repeat: -1,
+            });
+
+
+        let splitText;
+        function runSplit() {
+            splitText = new SplitType("[stagger-link]", {
+                types: "words, chars"
+            });
+        }
+        runSplit();
+
+        // ————— Update on window resize
+        let windowWidth = window.innerWidth;
+        window.addEventListener("resize", function () {
+            if (windowWidth !== window.innerWidth) {
+                windowWidth = window.innerWidth;
+                splitText.revert();
+                runSplit();
+            }
+        });
+
+        // ———— Animation
+        const staggerLinks = document.querySelectorAll("[stagger-link]");
+        staggerLinks.forEach((link) => {
+            const letters = link.querySelectorAll("[stagger-link-text] .char");
+            link.addEventListener("mouseenter", function () {
+                gsap.to(letters, {
+                    yPercent: -100,
+                    duration: 0.5,
+                    ease: "power4.inOut",
+                    stagger: { each: 0.03, from: "start" },
+                    overwrite: true
+                });
+            });
+            link.addEventListener("mouseleave", function () {
+                gsap.to(letters, {
+                    yPercent: 0,
+                    duration: 0.4,
+                    ease: "power4.inOut",
+                    stagger: { each: 0.03, from: "random" }
+                });
+            });
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+
+
+
+            gsap.utils.toArray('.site-listing').forEach((elem) => {
+                ScrollTrigger.create({
+                    trigger: elem,
+                    start: 'top 80%',
+                    end: 'bottom top',
+                    onEnter: () => {
+                        // Animate the ::after pseudo-element using GSAP's CSS plugin
+                        gsap.to(elem, {
+                            '--border-width': '100%', // Use a custom CSS variable for width
+                            duration: 0.6,
+                            ease: 'power2.out',
+                        });
+                    },
+                    onLeaveBack: () => {
+                        gsap.to(elem, {
+                            '--border-width': '0%', // Reset border width
+                            duration: 0.6,
+                            ease: 'power2.in',
+                        });
+                    },
+                });
+            });
+
+
+            // Split text into spans for animation
+            const typeSplit = new SplitType("[text-split]", {
+                types: "words, chars",
+                tagName: "span", // Wrap words/characters in span elements
+            });
+
+            // Helper function to create ScrollTrigger for animations
+            function createScrollTrigger(triggerElement, timeline) {
+                // Reset animation timeline when scrolling out of view (below bottom)
+                ScrollTrigger.create({
+                    trigger: triggerElement,
+                    start: "top bottom", // Trigger when the top of the element enters the bottom of the viewport
+                    onLeaveBack: () => {
+                        timeline.progress(0); // Reset animation
+                        timeline.pause(); // Pause timeline
+                    },
+                });
+
+                // Play animation when the element enters the viewport
+                ScrollTrigger.create({
+                    trigger: triggerElement,
+                    start: "top 80%", // Start animation when 60% of the viewport is reached
+                    onEnter: () => timeline.play(),
+                });
+            }
+
+            // Apply animations to all elements with the "words-slide-up" attribute
+            document.querySelectorAll("[words-slide-up]").forEach((element) => {
+                const timeline = gsap.timeline({ paused: true });
+                // Animate each "word" span
+                timeline.from(element.querySelectorAll(".word"), {
+                    opacity: 0,
+                    yPercent: 100, // Slide up from below
+                    duration: 0.5, // Animation duration
+                    ease: "back.out(2)", // Ease effect
+                    stagger: { amount: 0.5 }, // Stagger animation for a cascading effect
+                });
+
+                // Attach the timeline to scroll triggers
+                createScrollTrigger(element, timeline);
+            });
+
+
+            $("[scrub-each-word]").each(function (index) {
+                let tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: $(this),
+                        start: "top 90%",
+                        end: "top center",
+                        scrub: true
+                    }
+                });
+                tl.from($(this).find(".word"), { opacity: 0.2, duration: 0.2, ease: "power1.out", stagger: { each: 0.4 } });
+            });
+
+            // Avoid flash of unstyled content
+            gsap.set("[text-split]", { opacity: 1 });
+        });
+
+
+
+
+        let mm = gsap.matchMedia();
+
+
+        mm.add("(min-width: 1000px)", () => {
+
+            ScrollTrigger.create({
+                trigger: ".work-section",
+                strart: "top top",
+                end: () => document.querySelector(".work").offsetHeight + "px",
+                pin: ".left"
+            })
+
+            return () => { // optional
+                // custom cleanup code here (runs when it STOPS matching)
+            };
+        });
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>

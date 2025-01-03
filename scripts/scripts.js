@@ -58,3 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
         projects[currentIndex].style.display = "block";
     }
 });
+
+
+
+
+
+
+
