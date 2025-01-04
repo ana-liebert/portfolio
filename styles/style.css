@@ -416,6 +416,7 @@ svg.open {
     display: flex;
     flex-shrink: 0;
     align-items: center;
+
 }
 
 
@@ -751,11 +752,11 @@ p.year {
         width: 100%;
     }
 
-    .skills-section.fade-in-from-bottom.active {
+    .skills-section {
         flex-direction: column;
     }
     
-    .experience-section.fade-in-from-bottom.active {
+    .experience-section {
         flex-direction: column;
     }
     
@@ -780,7 +781,7 @@ p.year {
         flex-direction: column;
     }
     
-    h2.left-about.fade-in-from-bottom.active {
+    h2.left-about {
         margin-bottom: 40px;
     }
     
@@ -821,7 +822,7 @@ p.year {
         height: 30px;
     }
     
-    h2.right-about.fade-in-from-bottom.active {
+    h2.right-about{
         width: 75%;
     }
     
@@ -829,7 +830,7 @@ p.year {
         justify-content: center;
     }
     
-    .scroll.fade-in-from-bottom.active {
+    .scroll{
         margin-top: 50px;
         margin-left: 0;
     }
@@ -981,7 +982,7 @@ p.year {
 
 
 @media (max-width: 400px) {
-    h2.right-about.fade-in-from-bottom.active {
+    h2.right-about {
         width: 100%;
         font-size: 18px;
     }
@@ -1018,4 +1019,18 @@ p.year {
 .work-card p {
     font-size: 25px;
 }
+
+.banner p {
+    font-size: 18px;
+}
+
+svg.open {
+    width: 30px;
+    height: 30px;
+}
+
+.content {
+    padding: 20px 0;
+}
+
 }

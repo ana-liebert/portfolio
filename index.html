@@ -841,18 +841,22 @@
 
         jQuery(document).ready(function () {
 
-            jQuery('.fade-in-from-bottom').waypoint(function (direction) {
-                if (direction === 'down') {
-                    jQuery(this.element).addClass('active');
-                }
-                else {
-                    this.element.classList.remove('active');  // Removes it if the element is out of view
-                }
-            }, {
-                offset: '70%' // Adjust this value as needed
-            });
-
-
+            // Check if the device is mobile
+            if (window.innerWidth >= 768) {
+                // Only initialize the waypoint for devices wider than 768px
+                jQuery('.fade-in-from-bottom').waypoint(function (direction) {
+                    if (direction === 'down') {
+                        jQuery(this.element).addClass('active');
+                    } else {
+                        jQuery(this.element).removeClass('active'); // Remove class when scrolling up
+                    }
+                }, {
+                    offset: '70%' // Use the desktop offset
+                });
+            } else {
+                // Remove the 'fade-in-from-bottom' class for mobile to avoid unnecessary effects
+                jQuery('.fade-in-from-bottom').removeClass('fade-in-from-bottom');
+            }
 
 
 
@@ -870,33 +874,37 @@
 
         console.clear();
 
-        gsap.set('.banner', { xPercent: -50, yPercent: -50 })
+        // gsap.set('.banner', { xPercent: -50, yPercent: -50 })
 
 
-        var boxWidth = 203,
-            totalWidth = boxWidth * 10  // * n of boxes + diff textBox
-        time = 30,
-            no01 = document.querySelectorAll(".content"),
-            dirFromLeft = "+=" + totalWidth,
-            dirFromRight = "-=" + totalWidth;
+        // var boxWidth = 203,
+        //     totalWidth = boxWidth * 10  // * n of boxes + diff textBox
+        //     time = 30,
+        //     no01 = document.querySelectorAll(".content"),
+        //     dirFromLeft = "+=" + totalWidth,
+        //     dirFromRight = "-=" + totalWidth;
 
-        var mod = gsap.utils.wrap(0, totalWidth);
+        // var mod = gsap.utils.wrap(0, totalWidth);
 
-        gsap.set(no01, {
-            x: function (i) {
-                return i * boxWidth;
-            }
-        });
+        // gsap.set(no01, {
+        //     x: function (i) {
+        //         return i * boxWidth;
+        //     }
+        // });
 
-        var action = gsap.timeline()
-            .to(no01, {
-                x: dirFromLeft,
-                modifiers: {
-                    x: x => mod(parseFloat(x)) + "px"
-                },
-                duration: time, ease: 'linear',
-                repeat: -1,
-            });
+        // var action = gsap.timeline()
+        //     .to(no01, {
+        //         x: dirFromLeft,
+        //         modifiers: {
+        //             x: x => mod(parseFloat(x)) + "px"
+        //         },
+        //         duration: time, ease: 'linear',
+        //         repeat: -1,
+        //     });
+
+
+
+
 
 
         let splitText;
@@ -997,21 +1005,28 @@
                 });
             }
 
-            // Apply animations to all elements with the "words-slide-up" attribute
             document.querySelectorAll("[words-slide-up]").forEach((element) => {
                 const timeline = gsap.timeline({ paused: true });
-                // Animate each "word" span
+
+                // Define the animation for the words
                 timeline.from(element.querySelectorAll(".word"), {
                     opacity: 0,
-                    yPercent: 100, // Slide up from below
-                    duration: 0.5, // Animation duration
-                    ease: "back.out(2)", // Ease effect
-                    stagger: { amount: 0.5 }, // Stagger animation for a cascading effect
+                    yPercent: 100,
+                    duration: 0.8,
+                    ease: "back.out(2)",
+                    stagger: { amount: 0.5 },
                 });
 
-                // Attach the timeline to scroll triggers
-                createScrollTrigger(element, timeline);
+                // Check if the viewport width is mobile (adjust as needed)
+                if (window.innerWidth <= 768) {
+                    // Play the animation immediately on page load for mobile
+                    timeline.play();
+                } else {
+                    // Attach the timeline to scroll triggers for non-mobile devices
+                    createScrollTrigger(element, timeline);
+                }
             });
+
 
 
             $("[scrub-each-word]").each(function (index) {
@@ -1051,6 +1066,72 @@
         });
 
 
+
+
+
+        mm.add("(min-width: 400px)", () => {
+            // For screens larger than or equal to 400px
+            var boxWidth = 203;  // Default box width for larger screens
+            var totalWidth = boxWidth * 10;  // * n of boxes + diff textBox
+            var time = 30;
+            var no01 = document.querySelectorAll(".content");
+            var dirFromLeft = "+=" + totalWidth;
+            var dirFromRight = "-=" + totalWidth;
+
+            var mod = gsap.utils.wrap(0, totalWidth);
+
+            gsap.set('.banner', { xPercent: -50, yPercent: -50 });
+
+            // Immediately set the initial position of .content elements
+            gsap.set(no01, {
+                x: function (i) {
+                    return i * boxWidth; // Set the x position right away
+                }
+            });
+
+            // Create the animation timeline
+            var action = gsap.timeline()
+                .to(no01, {
+                    x: dirFromLeft,
+                    modifiers: {
+                        x: x => mod(parseFloat(x)) + "px"
+                    },
+                    duration: time, ease: 'linear',
+                    repeat: -1,
+                });
+        });
+
+        mm.add("(max-width: 399px)", () => {
+            // For screens smaller than 400px
+            var boxWidth = 149.47;  // Set box width for smaller screens
+            var totalWidth = boxWidth * 6;  // * n of boxes + diff textBox
+            var time = 20;
+            var no01 = document.querySelectorAll(".content");
+            var dirFromLeft = "+=" + totalWidth;
+            var dirFromRight = "-=" + totalWidth;
+
+            var mod = gsap.utils.wrap(0, totalWidth);
+
+            gsap.set('.banner', { xPercent: -50, yPercent: -50 });
+
+            // Immediately set the initial position of .content elements for mobile
+            gsap.set(no01, {
+                x: function (i) {
+                    return i * boxWidth; // Set the x position right away
+                }
+            });
+
+            // Create the animation timeline for mobile
+            var action = gsap.timeline()
+                .to(no01, {
+                    x: dirFromLeft,
+                    modifiers: {
+                        x: x => mod(parseFloat(x)) + "px"
+                    },
+                    duration: time, ease: 'linear',
+                    repeat: -1,
+                });
+        });
 
 
 
