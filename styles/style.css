@@ -808,7 +808,7 @@ p.year {
     .headline {
         margin-top: auto;
         position: absolute;
-        bottom: 0;
+        bottom: 3%;
         width: 100%;
     }
     
