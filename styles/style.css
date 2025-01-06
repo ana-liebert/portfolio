@@ -701,6 +701,20 @@ p.year {
 /* MOBILE */
 
 
+@media (min-width: 2000px) {
+    h1 {
+        font-size: 170px;
+    }
+
+    .footer-inner a {
+        font-size: 190px;
+    }
+
+    .banner {
+        justify-content: space-around;
+    }
+}
+
 @media (max-width: 1800px) {
     h1 {
         font-size: 10vw;
